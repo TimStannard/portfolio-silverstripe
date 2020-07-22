@@ -1,8 +1,8 @@
 ---
-Name: mytheme
+Name: Portfolio
 ---
 SilverStripe\View\SSViewer:
   themes:
-    - '$public'
+    - 'portf'
     - 'simple'
     - '$default'
