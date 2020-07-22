@@ -1,5 +1,5 @@
 {
-    "name": "Portfolio",
+    "name": "portfolio/tim",
     "type": "silverstripe-theme",
     "description": "My custom themed portfolio built in Silverstripe",
     "authors": [
@@ -31,11 +31,20 @@
             ".htaccess",
             "index.php",
             "web.config"
+        ],
+          "expose": [
+            "themes/portf/css",
+            "themes/portf/fonts",
+            "themes/portf/js",
+            "themes/portf/images"
         ]
     },
 
     "config": {
-        "process-timeout": 600
+        "process-timeout": 600,
+        "platform": {
+            "php": "7.3"
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
