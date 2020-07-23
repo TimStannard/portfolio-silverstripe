@@ -36,7 +36,7 @@ $MetaTags
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="$AbsoluteBaseURL" class="navbar-brand">Tim Stannard</a>
+               <a href="#" class="navbar-brand">Tim Stannard</a>
           </div>
 
           <div class="collapse navbar-collapse">
@@ -55,6 +55,7 @@ $MetaTags
      </div>
 </div>
 
+
 <!-- Home Section -->
 
 <section id="home" class="parallax-section">
@@ -68,12 +69,13 @@ $MetaTags
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <%-- <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4> --%>
-                              <hr>
-                              <p>Class name: $ClassName</p>
-                              <br>
+                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
                               $Title
-                              $Form
+                              <%-- <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hey! I'm <strong>Tim Stannard</strong> currently based in Wellington.</h1> --%>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>
+                              
+                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
+                              
                          </div>
                     </div>
                </div>
@@ -93,11 +95,12 @@ $MetaTags
                <div class="col-md-6 col-sm-12">
                     <div class="about-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
-                              <h1>Content</h1>
-                              <p class="color-yellow">Subtitle</p>
+                              <h1>Donec auctor</h1>
+                              <p class="color-yellow">Sed vulputate vitae diam quis bibendum</p>
                          </div>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              $Content
+                              <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa.</p>
+                              <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.</p>
                          </div>
                     </div>
                </div>
@@ -358,15 +361,6 @@ $MetaTags
           <div class="row">
 
                <div class="col-md-12 col-sm-12">
-                    <% if $Menu(2) %>
-                      <h3>Submenu: In this section</h3>
-                        <ul class="subnav">  
-                          <% loop $Menu(2) %>
-                            <li><a class="$LinkingMode" href="$Link">$MenuTitle</a></li>
-                          <% end_loop %>
-                        </ul>
-                        <hr>
-                    <% end_if %>
                     <div>Breadcrumbs: $Breadcrumbs</div>
                     <hr>
                     <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
