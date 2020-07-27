@@ -16,9 +16,16 @@
                          </div>
                     </div>
                </div>
-
-
           </div>
+          <% if $Brochure %>
+         <div class="row">
+             <% with $Brochure %>
+             <div class="col-sm-12">
+                 <a href="$URL" class="btn btn-warning btn-block"><i class="fa fa-download"></i> Download brochure [$Extension] ($Size)</a>                  
+             </div>
+             <% end_with %>
+         </div>
+         <% end_if %>
      </div>
 </section>
 

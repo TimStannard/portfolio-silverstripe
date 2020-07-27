@@ -12,8 +12,7 @@
                     <div class="projects-thumb">
                          <div class="section-title">
                               <h1>$Title</h1>
-                              <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                              tempor incididunt ut labore et dolore magna aliqua. </p>
+                              <p class="section-subtitle">$Content</p>
                          </div>
                     </div>
                </div>
@@ -26,9 +25,15 @@
   <div class="container">
      <div class="row">
           <% loop $Children %>
-          <div class="item col-md-4 col-sm-4">
-           <h3><a href="$Link">$Title</a></h3>
-           <p>Sed rutrum urna id tellus euismod gravida. Praesent placerat, mauris ac pellentesque fringilla, tortor libero condimen. Aliquam fermem tum nulla felis, sed molestie libero porttitor in.</p>
+          <div class="item col-md-4 col-sm-4 project-item">
+               <div>$Photo.ScaleWidth(500)</div>
+               <h3><a href="$Link">$Title</a></h3>
+               <h4>$Category</h4>
+               <% if $Blurb %>
+                    <p>$Blurb</p>
+                    <% else %>
+                    <p>$Content.FirstSentence</p>
+               <% end_if %>
           </div>
           <% end_loop %>
           </div>
