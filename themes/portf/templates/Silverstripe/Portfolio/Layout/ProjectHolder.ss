@@ -11,8 +11,9 @@
                <div class="col-md-6 col-sm-6">
                     <div class="projects-thumb">
                          <div class="section-title">
-                              <h4>Welcome to</h4>
                               <h1>$Title</h1>
+                              <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. </p>
                          </div>
                     </div>
                </div>
@@ -21,8 +22,18 @@
           </div>
      </div>
 </section>
-
-
+<div id="all-projects">
+  <div class="container">
+     <div class="row">
+          <% loop $Children %>
+          <div class="item col-md-4 col-sm-4">
+           <h3><a href="$Link">$Title</a></h3>
+           <p>Sed rutrum urna id tellus euismod gravida. Praesent placerat, mauris ac pellentesque fringilla, tortor libero condimen. Aliquam fermem tum nulla felis, sed molestie libero porttitor in.</p>
+          </div>
+          <% end_loop %>
+          </div>
+     </div>
+</div>
 
 <!-- Contact Section -->
 
@@ -33,8 +44,8 @@
                <div class="col-md-6 col-sm-12">
                     <div class="contact-form">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                              <h1 class="color-white">Say hello..</h1>
-                              <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                              <h1>Say hello..</h1>
+                              <p>Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
                          </div>
 
                          <div id="contact-form">

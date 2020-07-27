@@ -1,6 +1,11 @@
 /*colors*/
 
 /*pink: #FFF4EE*/
+/*yellow #feffa1*/
+/*green #B3FFE3*/
+/*blue #E6F2FF*/
+/*red #FF6559*/
+
 
 body {
 	background: #ffffff;
@@ -30,11 +35,11 @@ h1,h2,h3,h4,h5,h6, .navbar-brand{
 }
 
 h1,h2,h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 52px;
   padding-bottom: 14px;
   margin-bottom: 0px;
 }
@@ -70,12 +75,24 @@ strong {
 }
 
 p {
-    color: #888;
-    font-size: 16px;
+    color: #666;
+    font-size: 20px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0.2px;
 }
+
+#all-projects h3 {
+   font-family: 'Source Sans Pro', serif;
+}
+
+/*a {
+  border-bottom: 2px solid rgb(255, 101, 89,0.6);
+  transition:all 0.2s ease;
+}
+a:hover {
+  border-bottom: 2px solid #FF6559;
+}*/
 
 .section-btn {
   background-color: transparent;
@@ -92,7 +109,7 @@ p {
 }
 
 .section-btn:hover {
-  background: #E3AE57;
+  background: #FF6559;
   border-color: transparent;
   color: #ffffff;
 }
@@ -112,6 +129,10 @@ p {
   padding-bottom: 22px;
 }
 
+.section-subtitle {
+  max-width: 40vh;
+}
+
 #about,
 #service,
 #experience,
@@ -121,7 +142,8 @@ p {
 }
 
 #home .container,
-#projects-banner .container,
+#projects-banner .container, 
+#all-projects .container,
 #about .container, 
 #experience .container,
 #service .container,
@@ -192,14 +214,14 @@ html{
 }
 
 a {
-  color: #E3AE57;
+  color: #333;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #E3AE57;
+  color: #FF6559;
   outline: none;
 }
 
@@ -275,6 +297,7 @@ a:hover, a:active, a:focus {
 .custom-navbar {
     margin-bottom: 0;
     background-color: #ffffff;
+        transition: all 0.4s ease-in-out;
 }
 
 .custom-navbar .navbar-brand {
@@ -286,14 +309,14 @@ a:hover, a:active, a:focus {
 .custom-navbar .nav li a {
     color: #666;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 40px;
     transition: all 0.4s ease-in-out;
 }
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #E3AE57;
+    color: #FF6559;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -309,6 +332,7 @@ a:hover, a:active, a:focus {
 .custom-navbar .navbar-toggle {
     border: none;
     padding-top: 10px;
+        transition: all 0.4s ease-in-out;
 }
 
 .custom-navbar .navbar-toggle {
@@ -328,7 +352,7 @@ a:hover, a:active, a:focus {
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        /*box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);*/
         padding: 0;
     }
 
@@ -380,17 +404,18 @@ a:hover, a:active, a:focus {
 }
 
 #projects-banner .col-md-6  {
-  background: #FFF4EE;
+  background: white;
   padding-right: 0;
   padding-left: 0;
 }
 
 #projects-banner .projects-img {
-  background: url('../images/projects.png') no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background: url('../images/pastel-responsive.png') no-repeat;
+  background-size: contain;
+  background-position: 50% 60%;
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
+  /*background-color:white;*/
 }
 
 #projects-banner .projects-thumb {
@@ -405,6 +430,14 @@ a:hover, a:active, a:focus {
   height: 100vh;
   padding: 0 45px 0 45px;
 }
+#all-projects {
+    padding: 22px 32px 32px 32px;
+}
+
+#all-projects .col-md-4 {
+  /*padding:0px 32px;*/
+}
+  
 
 /*---------------------------------------
    About section              
@@ -551,7 +584,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  /*background: #B3FFE3;*/
+  background:#FEFFA1;
 }
 
 #contact .contact-form,
@@ -570,17 +604,17 @@ a:hover, a:active, a:focus {
   padding-bottom: 6px;
 }
 
-#contact .form-control::-moz-placeholder{color:#ffffff;opacity:1}
-#contact .form-control:-ms-input-placeholder{color:#ffffff}
-#contact .form-control::-webkit-input-placeholder{color:#ffffff}
+#contact .form-control::-moz-placeholder{color:#333;opacity:1}
+#contact .form-control:-ms-input-placeholder{color:#333}
+#contact .form-control::-webkit-input-placeholder{color:#333}
 
 #contact .form-control {
-  background: transparent;
+  background: white;
   border: none;
-  border-bottom: 1px solid #E3AE57;
-  border-radius: 0px;
+  border-bottom: 1px solid rgb(0, 0, 0,0.15);
+  border-radius: 3px;
   box-shadow: none;
-  color: #ffffff;
+  color: #333;
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 25px;
@@ -596,17 +630,18 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"] {
-  background: #ffffff;
-  border: 2px solid transparent;
+  background: #ff6559;
+  border: 2px solid #ff6559;
   border-radius: 40px;
-  color: #161616;
+  color: white;
   padding-bottom: 10px;
+  font-weight:500;
 }
 
 #contact input[type="submit"]:hover {
-  background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
+  background: white;
+  border-color: #ff6559;
+  color: #ff6559;
 }
 
 #contact .fa {
@@ -659,7 +694,7 @@ footer {
 }
 
 .social-icon li a:hover {
-    background: #E3AE57;
+    background: #FF6559;
     border-color: #ffffff;
     color: #ffffff;
     transform: scale(1.1);
