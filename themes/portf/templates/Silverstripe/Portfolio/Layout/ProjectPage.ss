@@ -5,7 +5,7 @@
      <div class="container">
           <div class="row">
                <div class="col-md-6 col-sm-6">
-                    <div class="projects-img"></div>
+                    <div class="projects-img" style="background-image:url($Photo.URL)"></div>
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -13,6 +13,7 @@
                          <div class="section-title">
                               <h1>$Title</h1>
                               <p class="section-subtitle">$Content</p>
+                              $Photo
                          </div>
                     </div>
                </div>

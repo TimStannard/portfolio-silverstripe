@@ -4,7 +4,6 @@
 <section id="home" class="parallax-section">
      <div class="container">
           <div class="row">
-
                <div class="col-md-6 col-sm-6">
                     <div class="home-img"></div>
                </div>
@@ -12,7 +11,6 @@
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <h4>Welcome to</h4>
                               <h1>$Title</h1>
                          </div>
                     </div>
