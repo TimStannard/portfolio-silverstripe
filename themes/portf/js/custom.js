@@ -79,3 +79,18 @@
 
   });
 
+  // text animations
+
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 550,
+    delay: (el, i) => 40 * (i+1)
+  });

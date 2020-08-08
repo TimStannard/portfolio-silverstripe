@@ -6,6 +6,14 @@
 /*blue #E6F2FF*/
 /*red #FF6559*/
 
+/*
+Theme Name: Tim Stannard Silverstripe Portfolio
+Description: Custom theme built in Silverstripe and Bootstrap
+Author: Tim Stannard
+Author URI: https://timothystannard.com
+Tags: Silverstripe, Website
+*/
+
 
 body {
 	background: #ffffff;
@@ -18,6 +26,7 @@ body {
 html,body {
   width: 100%;
   height: 100%;
+  font-size:100%;
 }
 
 
@@ -30,28 +39,28 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 300;
 }
 
-h1,h2,h3, .navbar-brand{
+h1,h2,h3{
   font-family: 'Source Serif Pro', 'Source Sans Pro', serif;
 }
 
-h1,h2,h3 {
+
+h1 {
+  font-size: calc(1.3rem + 2.2vw);
+  padding-bottom: 14px;
+  margin-bottom: 0px;
   font-weight: 400;
 }
 
-h1 {
-  font-size: 52px;
-  padding-bottom: 14px;
-  margin-bottom: 0px;
-}
-
 h2 {
-  font-size: 42px;
+  font-size: calc(1.6rem + 1vw);
   line-height: 52px;
   margin-top: 0px;
+  font-weight:500;
 }
 
 h3 {
-  font-size: 26px;
+  /*font-size: 26px;*/
+  font-size: calc(1rem + 1vw);
   line-height: 32px;
   padding-bottom: 6px;
 }
@@ -74,7 +83,8 @@ strong {
 
 p {
     color: #666;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: calc(1rem + 0.3vw);
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0.2px;
@@ -83,14 +93,6 @@ p {
 #all-projects h3 {
    font-family: 'Source Sans Pro', serif;
 }
-
-/*a {
-  border-bottom: 2px solid rgb(255, 101, 89,0.6);
-  transition:all 0.2s ease;
-}
-a:hover {
-  border-bottom: 2px solid #FF6559;
-}*/
 
 .section-btn {
   background-color: transparent;
@@ -128,12 +130,12 @@ a:hover {
 }
 
 .section-title p {
-  max-width: 50vh;
+  max-width: 60vh;
 }
 
 #about,
 #service,
-#experience,
+#home-projects,
 #education,
 #contact {
   position: relative;
@@ -143,7 +145,7 @@ a:hover {
 #projects-banner .container, 
 #all-projects .container,
 #about .container, 
-#experience .container,
+#home-projects .container,
 #service .container,
 #education .container,
 #contact .container {
@@ -152,20 +154,15 @@ a:hover {
   margin: 0;
 }
 
-#experience .experience-thumb,
-#education .education-thumb  {
-  padding: 22px 42px 42px 42px;
+#home-projects .projects-thumb,
+#contact .contact-thumb  {
+  padding: 52px 42px;
 }
 
 #service,
 #quotes,
 footer {
   text-align: center;
-}
-
-#experience,
-#education {
-  background: #E9724C;
 }
 
 .background-image {
@@ -295,17 +292,23 @@ a:hover, a:active, a:focus {
 .custom-navbar {
     margin-bottom: 0;
     background-color: #ffffff;
-        transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .custom-navbar .navbar-brand {
     color: #333;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height:38px;
+    font-weight: 500;
+      opacity:0;
+}
+
+.top-nav-collapse {
+
 }
 
 .custom-navbar .nav li a {
-    color: #666;
+    color: #333;
     font-size: 18px;
     font-weight: 300;
     line-height: 40px;
@@ -350,7 +353,6 @@ a:hover, a:active, a:focus {
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
-        /*box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);*/
         padding: 0;
     }
 
@@ -362,11 +364,10 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home h1 {
-  padding-bottom: 18px;
+  padding-bottom: 28px;
 }
 
 #home .col-md-6 {
-  /*background: ;*/
   padding-right: 0;
   padding-left: 0;
 }
@@ -374,9 +375,13 @@ a:hover, a:active, a:focus {
 #home .home-img {
   background: url('../images/man.png') no-repeat;
   background-size: contain;
-  background-position: 50% 80%;
-  width: 100%;
-  height: 100vh;
+  background-position: 50% 60%;
+  width: 90%;
+  height: 90vh;
+}
+
+#home h1 {
+  max-width:60vh;
 }
 
 #home .home-thumb {
@@ -388,10 +393,40 @@ a:hover, a:active, a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   padding: 0 45px 0 45px;
 }
 
+#home .home-thumb p {
+  font-size: calc(1.1rem + 0.3vw);
+  line-height:calc(1.3rem + 0.5vw);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 4px 0px;
+    border-bottom: 2px solid #ff65593d;
+    color: #FF6559;
+    font-size: calc(1.2rem + 0.3vw);
+    font-weight: 400;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn a {
+      color: #FF6559;
+}
+
+
+.cta-btn:hover {
+    cursor:pointer;
+    border-bottom: 2px solid #FF6559;
+}
+
+.banner-pastel {
+  background: url('../images/bannerbg.jpg') left center / cover;
+  /*background-size: cover;*/
+}
 
 /*---------------------------------------
    Project section              
@@ -408,8 +443,7 @@ a:hover, a:active, a:focus {
 }
 
 #projects-banner .projects-img {
-  background: url('../images/pastel-responsive.png') no-repeat;
-  background-size: contain;
+  background: url('../images/pastel-responsive.png') center center / contain;
   background-position: 50% 60%;
   width: 100%;
   height: 100vh; 
@@ -476,46 +510,37 @@ a:hover, a:active, a:focus {
     Service section              
 -----------------------------------------*/
 
-#service {
-  background: #E9724C;
-}
-
-#service p {
-  font-size: 18px;
-  line-height: 30px;
-}
 
 #service .service-thumb {
   padding: 52px 22px 52px 22px;
 }
 
-#service .service-thumb .fa {
-  font-size: 42px;
+#service .service-thumb .far, #service .service-thumb .fas, #service .service-thumb .fa{
+ font-size:calc(1rem + 2vw);
   padding-bottom: 22px;
+}
+
+.banner-pastel {
+  padding:0px 25px;
 }
 
 
 
 /*---------------------------------------
-    Experience section              
+    Home - projects section              
 -----------------------------------------*/
 
-#experience .experience-img {
-  background: url('../images/experience-img.jpg') no-repeat;
-}
-
-#experience .media-heading {
+#home-projects .media-heading {
   margin-bottom: 0px;
 }
 
-#experience .media .fa {
-  font-size: 42px;
-  margin-right: 14px;
-}
-
-#experience small {
+#home-projects small {
   color: #633;
   font-weight: bold;
+}
+
+#home-projects h2, #home-projects p, .text-center {
+  text-align: center;
 }
 
 /*---------------------------------------
@@ -523,7 +548,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #education {
-  background: #E3AE57;
+  background: white;
 }
 
 #education .education-img {
@@ -583,15 +608,10 @@ a:hover, a:active, a:focus {
     Contact section              
 -----------------------------------------*/
 
-#contact {
-  /*background: #B3FFE3;*/
-  background:#FEFFA1;
-}
-
-#contact .contact-form,
-#contact .contact-thumb {
+#contact .contact-form {
   padding: 22px 32px 22px 32px;
-  min-height: 75vh;
+  max-width:60vw;
+  margin:0 auto;
 }
 
 #contact .contact-img {
@@ -634,8 +654,9 @@ a:hover, a:active, a:focus {
   border: 2px solid #ff6559;
   border-radius: 40px;
   color: white;
-  padding-bottom: 10px;
+  padding: 5px 30px;
   font-weight:500;
+  width:auto;
 }
 
 #contact input[type="submit"]:hover {
@@ -701,6 +722,7 @@ footer {
 }
 
 
+/*text animations*/
 
 /*---------------------------------------
    Mobile Responsive         
@@ -736,7 +758,7 @@ footer {
   #home .container, 
   #projects-banner .container,
   #about .container, 
-  #experience .container,
+  #home-projects .container,
   #service .container,
   #education .container,
   #contact .container {
@@ -745,7 +767,7 @@ footer {
   }
 
   #about .col-md-3,
-  #experience .col-md-6,
+  #home-projects .col-md-6,
   #education .col-md-6,
   #contact .col-md-3 {
     padding: 0;

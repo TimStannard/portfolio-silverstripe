@@ -11,7 +11,13 @@
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <h1>$Title</h1>
+                              <h1 class="ml3">
+                                   <span class="text-wrapper">
+                                        <span class="letters">Tim Stannard is a Web Developer</span>
+                                   </span>
+                              </h1>
+                              <p class="wow fadeIn" data-wow-delay="1s">Hey! Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life. Find out about my diverse set of skills below.</p>
+                              <div class="cta-btn wow fadeIn"  data-wow-delay="1.5s"><a href="#home-projects">View my work!</a></div>
                          </div>
                     </div>
                </div>
@@ -21,7 +27,7 @@
      </div>
 </section>
 
-
+<%-- 
 <!-- About Section -->
 
 <section id="about" class="parallax-section">
@@ -48,7 +54,7 @@
                     <div class="skill-thumb">
                          <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
                               <h1>My Skills</h1>
-                              <p class="color-white">Photoshop . HTML CSS JS . Web Design</p>
+                              <p class="color-white">Web Design. HTML CSS JS. PHP. Silverstripe. Wordpress. Photoshop.</p>
                          </div>
 
                          <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
@@ -77,43 +83,42 @@
           </div>
      </div>
 </section>
-
+ --%>
 
 <!-- Service Section -->
 
 <section id="service" class="parallax-section">
      <div class="container">
-          <div class="row">
-
-               <div class="bg-yellow col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                         <i class="fa fa-desktop"></i>
-                              <h3>Interface Design</h3>
-                              <p class="color-white">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante.</p>
+          <div class="row banner-pastel">
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeIn service-thumb" data-wow-delay="0.8s">
+                         <img src="_resources/themes/portf/images/icon-blub.png" alt="light blub">
+                              <h3>Achieving your vision</h3>
+                              <p>I'm passionate about turning your ideas into beautiful and intuitive designs.</p>
                     </div>
                </div>
 
                <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                         <i class="fa fa-paper-plane"></i>
-                              <h3>Media Strategy</h3>
-                              <p class="color-white">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+                    <div class="wow fadeIn service-thumb" data-wow-delay="1.2s">
+                        <img src="_resources/themes/portf/images/icon-cursor.png" alt="mouse cursor">
+                              <h3>UX and UI</h3>
+                              <p>Friendly, functional and enjoyable user experiences.</p>
                     </div>
                </div>
 
-               <div class="bg-dark col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                         <i class="fa fa-table"></i>
-                              <h3>Mobile App</h3>
-                              <p class="color-white">Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeIn service-thumb" data-wow-delay="1.6s">
+                         <img src="_resources/themes/portf/images/icon-computer.png" alt="computer monitor">
+                              <h3>Frontend Design</h3>
+                              <p>I use CSS HTML to create modern, professional looking designs. Check out my projects below.</p>
                     </div>
                </div>
 
-               <div class="bg-white col-md-3 col-sm-6">
-                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                         <i class="fa fa-html5"></i>
-                              <h3>Coding</h3>
-                              <p>Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra iaculis.</p>
+               <div class="col-md-3 col-sm-6">
+                    <div class="wow fadeIn service-thumb" data-wow-delay="1.8s">
+                        <img src="_resources/themes/portf/images/icon-code.png" alt="code symbol">
+                              <h3>Backend Coding</h3>
+                              <p>I work with Javascript and PHP and focus on clean, elegant and efficient code.</p>
                     </div>
                </div>
 
@@ -122,43 +127,18 @@
 </section>
 
 
-<!-- Experience Section -->
+<!-- Projects Section -->
 
-<section id="experience" class="parallax-section">
+<section id="home-projects">
      <div class="container">
           <div class="row">
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="background-image experience-img"></div>
-               </div>
-
-               <div class="col-md-6 col-sm-6">
-                    <div class="color-white experience-thumb">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Experiences</h1>
-                              <p class="color-white">Previous companies and my tasks</p>
+               <div class="col col-sm">
+                    <div class="projects-thumb">
+                         <div class="wow fadeIn section-title" data-wow-delay="0.8s">
+                              <h2>My Projects</h2>
                          </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Graphic Designer <small>2014 Jul - 2015 Sep</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                         </div>
-
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                              <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Web Designer <small>2015 Oct - 2017 Jan</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                         </div>
-
+                         <p>Previous companies and my tasks</p>
+                         <p>Projects go here</p>
                     </div>
                </div>
 
@@ -168,7 +148,7 @@
 
 
 <!-- Education Section -->
-
+<%-- 
 <section id="education" class="parallax-section">
      <div class="container">
           <div class="row">
@@ -209,11 +189,11 @@
 
           </div>
      </div>
-</section>
+</section> --%>
 
 
 <!-- Quotes Section -->
-
+<%-- 
 <section id="quotes" class="parallax-section">
      <div class="overlay"></div>
      <div class="container">
@@ -227,16 +207,41 @@
 
           </div>
      </div>
-</section>
+</section> --%>
 
 
 <!-- Contact Section -->
 
-<section id="contact" class="parallax-section">
+<section id="contact">
      <div class="container">
           <div class="row">
-
-               <div class="col-md-6 col-sm-12">
+               <div class="col col-sm">
+                    <div class="projects-thumb text-center">
+                         <div class="wow fadeIn section-title" data-wow-delay="0.8s">
+                              <h2>Get in touch</h2>
+                         </div>
+                         <p>Blurb</p>
+                         <div class="contact-form">
+                              <div id="contact-form">
+                                   <form action="#template-mo" method="post">
+                                        <div class="wow fadeInUp" data-wow-delay="1s">
+                                             <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
+                                        </div>
+                                        <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                             <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                                        </div>
+                                        <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                             <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
+                                        </div>
+                                        <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                             <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <%-- <div class="col-md-6 col-sm-12">
                     <div class="contact-form">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
@@ -284,6 +289,6 @@
                     </div>
                </div>
 
-          </div>
+          </div> --%>
      </div>
 </section>
