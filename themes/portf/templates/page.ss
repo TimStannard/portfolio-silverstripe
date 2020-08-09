@@ -4,9 +4,6 @@
      <% base_tag %>
      $MetaTags
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">  
-     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:300,400,700" rel="stylesheet">  
-     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Varta:wght@300;500;700&display=swap" rel="stylesheet">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>   
      <script src="https://kit.fontawesome.com/b0f16cc58c.js" crossorigin="anonymous"></script>

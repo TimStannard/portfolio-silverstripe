@@ -29,9 +29,9 @@
 
 <!-- Service Section -->
 
-<section id="service" class="parallax-section">
+<section id="service">
      <div class="container">
-          <div class="row banner-pastel">
+          <div class="row">
                <div class="col-md-3 col-sm-6">
                     <div class="wow fadeIn service-thumb" data-wow-delay="0.8s">
                          <img src="_resources/themes/portf/images/icon-blub.jpg" alt="light blub">
@@ -52,7 +52,7 @@
                     <div class="wow fadeIn service-thumb" data-wow-delay="1.6s">
                          <img src="_resources/themes/portf/images/icon-computer.jpg" alt="computer monitor">
                               <h3>Frontend Design</h3>
-                              <p>I use CSS HTML to create modern, professional looking designs. Check out my projects below.</p>
+                              <p>I use CSS & HTML to create modern, professional looking designs. Check out my projects below.</p>
                     </div>
                </div>
 
@@ -78,6 +78,7 @@
                     <div class="projects-thumb">
                          <div class="wow fadeIn section-title" data-wow-delay="0.8s">
                               <h2>My Projects</h2>
+                              <div class="grey-divider"></div>
                          </div>
                          <p>Previous companies and my tasks</p>
                          <p>Projects go here</p>
@@ -88,24 +89,6 @@
      </div>
 </section>
 
-
-<!-- Quotes Section -->
-
-<section id="quotes" class="parallax-section">
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
-                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
-                    <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
-               </div>
-
-          </div>
-     </div>
-</section>
-
-
 <!-- Contact Section -->
 
 <section id="contact">
@@ -113,10 +96,13 @@
           <div class="row">
                <div class="col col-sm">
                     <div class="contact-thumb text-center">
-                         <div class="wow fadeIn section-title" data-wow-delay="0.8s">
-                              <h2>Get in touch</h2>
+                         <div class="wow fadeIn">
+                             <img src="_resources/themes/portf/images/me.png" alt="photo of tim stannard" class="profile-img">
                          </div>
-                         <p>Blurb</p>
+                         <div class="wow fadeIn section-title" data-wow-delay="0.8s">
+                              <h2>Let's chat!</h2>
+                         </div>
+                         <p class="wow fadeIn" data-wow-delay="1s">Give me a call or drop me a line below and I'll get back to you as soon as I can.</p>
                          <div class="contact-form">
                               <div id="contact-form">
                                    <form action="#template-mo" method="post">

@@ -233,6 +233,12 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
+.grey-divider {
+  width:20px;
+  height:2px;
+  margin:30px auto;
+  background:#d2d2d2;
+}
 
 
 /*---------------------------------------
@@ -607,7 +613,7 @@ a:hover, a:active, a:focus {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 25px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact .form-control:focus {
@@ -615,7 +621,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact input {
-  height: 45px;
+  height: auto;
 }
 
 #contact input[type="submit"] {
@@ -623,7 +629,7 @@ a:hover, a:active, a:focus {
   border: 2px solid #ff6559;
   border-radius: 40px;
   color: white;
-  padding: 5px 30px;
+  padding: 12px 30px;
   font-weight:500;
   width:auto;
 }
@@ -638,6 +644,17 @@ a:hover, a:active, a:focus {
   padding-right: 10px;
 }
 
+#contact {
+  background-image: url("../images/large-bg.jpg");
+    /*background: url('../images/man.png') no-repeat;*/
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+.profile-img {
+  max-width:200px;
+  margin: 30px auto;
+}
 
 
 /*---------------------------------------
