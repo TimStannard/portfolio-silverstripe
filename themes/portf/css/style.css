@@ -17,7 +17,7 @@ Tags: Silverstripe, Website
 
 body {
 	background: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Varta', sans-serif;
   font-style: normal;
 	font-weight: 300;
   overflow-x: hidden;
@@ -40,27 +40,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1,h2,h3{
-  font-family: 'Source Serif Pro', 'Source Sans Pro', serif;
+  font-family: 'Vollkorn', serif;
 }
 
 
 h1 {
-  font-size: calc(1.3rem + 2.2vw);
+  font-size: calc(1.7rem + 1.5vw);
   padding-bottom: 14px;
   margin-bottom: 0px;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 4rem;
 }
 
 h2 {
-  font-size: calc(1.6rem + 1vw);
+  font-size: calc(1.3rem + 1vw);
   line-height: 52px;
   margin-top: 0px;
   font-weight:500;
 }
 
 h3 {
-  /*font-size: 26px;*/
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.6rem + 1vw);
   line-height: 32px;
   padding-bottom: 6px;
 }
@@ -121,7 +121,7 @@ p {
 
 .parallax-section {
   background-attachment: fixed !important;
-  background-size: cover !important;
+  background-size: contain !important;
 }
 
 .section-title {
@@ -424,7 +424,7 @@ a:hover, a:active, a:focus {
 }
 
 .banner-pastel {
-  background: url('../images/bannerbg.jpg') left center / cover;
+  /*background: url('../images/bannerbg.jpg') left center / cover;*/
   /*background-size: cover;*/
 }
 
@@ -512,7 +512,7 @@ a:hover, a:active, a:focus {
 
 
 #service .service-thumb {
-  padding: 52px 22px 52px 22px;
+  padding: 0px 22px 52px 22px;
 }
 
 #service .service-thumb .far, #service .service-thumb .fas, #service .service-thumb .fa{
@@ -524,6 +524,9 @@ a:hover, a:active, a:focus {
   padding:0px 25px;
 }
 
+#service {
+    /*background: url('../images/bannerbg.jpg');*/
+}
 
 
 /*---------------------------------------
@@ -567,40 +570,6 @@ a:hover, a:active, a:focus {
 #education small {
   color: #886D1E;
   font-weight: bold;
-}
-
-
-
-/*---------------------------------------
-   Quotes section              
------------------------------------------*/
-
-#quotes {
-    background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    position: relative;
-    padding: 100px 0px;
-}
-
-#quotes .overlay {
-    background: #121212;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 0.7;
-}
-
-#quotes .fa {
-  font-size: 42px;
-  margin-top: 32px;
-  margin-bottom: 22px;
-}
-
-#quotes p {
-  padding-top: 32px;
 }
 
 

@@ -34,10 +34,10 @@ namespace {
             Requirements::css('themes/portf/css/style.css');
             Requirements::javascript('themes/portf/js/jquery.js');
             Requirements::javascript('themes/portf/js/bootstrap.min.js');
-            Requirements::javascript('themes/portf/js/jquery.parallax.js');
             Requirements::javascript('themes/portf/js/smoothscroll.js');
             Requirements::javascript('themes/portf/js/wow.min.js');
             Requirements::javascript('themes/portf/js/custom.js');
+            Requirements::javascript('themes/portf/js/rellax.min.js');
         }
     }
 }
