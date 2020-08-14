@@ -1,8 +1,8 @@
 
 <!-- Home Section -->
 
-<section id="home" class="parallax-section">
-     <div class="container">
+<section id="home">
+     <div class="container-fluid">
           <div class="row">
                <div class="col-md-6 col-sm-6">
                     <div class="home-img"></div>
@@ -17,7 +17,7 @@
                                    </span>
                               </h1>
                               <p class="wow fadeIn" data-wow-delay="1s">Hey! Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life. Find out about my diverse set of skills below.</p>
-                              <div class="cta-btn wow fadeIn"  data-wow-delay="1.5s"><a href="#home-projects">View my work!</a></div>
+                              <div id="cta-hero-home" class="cta-btn wow fadeIn"  data-wow-delay="1.5s">View my work!</div>
                          </div>
                     </div>
                </div>
@@ -29,40 +29,36 @@
 
 <!-- Service Section -->
 
-<section id="service">
-     <div class="container">
-          <div class="row">
-               <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="0.8s">
-                         <img src="_resources/themes/portf/images/icon-blub.jpg" alt="light blub">
-                              <h3>Achieving visions</h3>
-                              <p>I'm passionate about turning your ideas into beautiful and intuitive designs.</p>
-                    </div>
-               </div>
 
-               <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="1.2s">
+
+<section id="service">
+     <div class="container-fluid">
+
+          <div class="row justify-content-center">
+    <div class="col-md-3">
+      <div class="wow fadeIn service-thumb" data-wow-delay="0.3s">
                         <img src="_resources/themes/portf/images/icon-cursor.jpg" alt="mouse cursor">
                               <h3>UX and UI</h3>
                               <p>Friendly, functional and enjoyable user experiences.</p>
                     </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="1.6s">
+    </div>
+    <div class="col-md-3">
+      <div class="wow fadeIn service-thumb" data-wow-delay="0.6s">
                          <img src="_resources/themes/portf/images/icon-computer.jpg" alt="computer monitor">
                               <h3>Frontend Design</h3>
                               <p>I use CSS & HTML to create modern, professional looking designs. Check out my projects below.</p>
                     </div>
-               </div>
-
-               <div class="col-md-3 col-sm-6">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="1.8s">
+    </div>
+     <div class="col-md-3">
+      <div class="wow fadeIn service-thumb" data-wow-delay="0.9s">
                         <img src="_resources/themes/portf/images/icon-code.jpg" alt="code symbol">
                               <h3>Backend Coding</h3>
                               <p>I work with Javascript and PHP and focus on clean, elegant and efficient code.</p>
                     </div>
-               </div>
+    </div>
+  </div>
+
+     
 
           </div>
      </div>
@@ -72,16 +68,38 @@
 <!-- Projects Section -->
 
 <section id="home-projects">
-     <div class="container">
+     <div class="container-fluid">
           <div class="row">
                <div class="col col-sm">
                     <div class="projects-thumb">
-                         <div class="wow fadeIn section-title" data-wow-delay="0.8s">
-                              <h2>My Projects</h2>
+                         <div class="wow fadeIn section-title">
+                              <h2>Featured Work</h2>
                               <div class="grey-divider"></div>
                          </div>
-                         <p>Previous companies and my tasks</p>
-                         <p>Projects go here</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+                         <div id="all-projects">
+                           <div class="container-fluid">
+                              <div class="row">
+                                  <% loop $ChildrenOf(my-projects) %>
+                                   <% if $Featured %>
+                                   <div class="item col-md-4 col-sm-4 project-item wow fadeIn">
+                                        <div>$Logo.ScaleWidth(500)</div>
+                                        <h3>$Title</h3>
+                                        <% if $Blurb %>
+                                             <p>$Blurb</p>
+                                             <% else %>
+                                             <p>$Content.FirstSentence</p>
+                                        <% end_if %>
+                                        <span class="button"><a href="$Link">View case study</a></h3></span>
+                                   </div>
+                                   <% end_if %>
+                                   <% end_loop %>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
                </div>
 
@@ -92,7 +110,7 @@
 <!-- Contact Section -->
 
 <section id="contact">
-     <div class="container">
+     <div class="container-fluid">
           <div class="row">
                <div class="col col-sm">
                     <div class="contact-thumb text-center">
@@ -102,10 +120,10 @@
                          <div class="wow fadeIn section-title" data-wow-delay="0.8s">
                               <h2>Let's chat!</h2>
                          </div>
-                         <p class="wow fadeIn" data-wow-delay="1s">Give me a call or drop me a line below and I'll get back to you as soon as I can.</p>
+                         <p class="wow fadeIn" data-wow-delay="1s">Drop me a line below and I'll get back to you as soon as I can.</p>
                          <div class="contact-form">
                               <div id="contact-form">
-                                   <form action="#template-mo" method="post">
+                                   <form action="#submit" method="post">
                                         <div class="wow fadeInUp" data-wow-delay="1s">
                                              <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
                                         </div>
@@ -115,7 +133,7 @@
                                         <div class="wow fadeInUp" data-wow-delay="1.4s">
                                              <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
                                         </div>
-                                        <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                        <div class="wow fadeInUp col" data-wow-delay="1.6s">
                                              <input name="submit" type="submit" class="form-control" id="submit" value="Send">
                                         </div>
                                    </form>

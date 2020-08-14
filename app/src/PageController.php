@@ -37,7 +37,7 @@ namespace {
             Requirements::javascript('themes/portf/js/smoothscroll.js');
             Requirements::javascript('themes/portf/js/wow.min.js');
             Requirements::javascript('themes/portf/js/custom.js');
-            Requirements::javascript('themes/portf/js/rellax.min.js');
+            Requirements::javascript('themes/portf/js/parallax.min.js');
         }
     }
 }
