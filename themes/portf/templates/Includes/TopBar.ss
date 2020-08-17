@@ -1,24 +1,18 @@
-<div class="navbar fixed-top custom-navbar" role="navigation">
-     <div class="container">
-          <!-- navbar header -->
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="$AbsoluteBaseURL" class="navbar-brand">Tim Stannard</a>
-          </div>
+ <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+ <div class="container">
+     <a class="navbar-brand" href="#">Navbar</a>
+   <!-- Collapse button -->
+  <button class="navbar-toggler" id="nav-hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+  </button>
 
-         <nav class="navbar navbar-expand-sm justify-content-end">
-        <ul class="nav navbar-nav" id="nav-links">
+  <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+<ul class="nav navbar-nav" id="nav-links">
           <% loop $Menu(1) %>
           <li><a class="$LinkingMode" href="$Link" title="Go to the $Title page">$MenuTitle</a></li>
           <% end_loop %>
        </ul>
-     </div>
-</nav>
-
-     </div>
+  </div>
 </div>
-
+</nav>

@@ -33,6 +33,12 @@
     }
   });
 
+// animated hamburger nav menu
+
+  $('#nav-hamburger').click(function() {
+    console.log("clicked");
+    $('.animated-icon').toggleClass('open');
+  });
 
 
   /*-------------------------------------------------------------------------------
