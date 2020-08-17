@@ -3,7 +3,7 @@
      <div class="container-fluid">
           <div class="row">
                <div class="col-md-5 col-sm-5">
-                    <div class="home-img"></div>
+                    <div class="home-img wow bounceIn"></div>
                </div>
                <div class="col-md-7 col-sm-7">
                     <div class="home-thumb">
@@ -13,8 +13,8 @@
                                    <span class="letters">Tim Stannard is a Web Developer</span>
                                    </span>
                               </h1>
-                              <p class="wow fadeIn" data-wow-delay="1s">Hey! 👋 Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life. Find out about my diverse set of skills below.</p>
-                              <div id="cta-hero-home" class="cta-btn wow fadeIn"  data-wow-delay="1.5s">View my work!</div>
+                              <p class="wow fadeIn" data-wow-delay="1s">Hey! 👋 Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life.</p>
+                              <div id="cta-hero-home" class="cta-btn wow fadeIn"  data-wow-delay="1.2s">View my work!</div>
                          </div>
                     </div>
                </div>
@@ -26,29 +26,29 @@
      <div class="container-fluid">
           <div class="row justify-content-center">
                <div class="col-md-3">
-                    <div class="wow fadeIn service-thumb">
-                         <img src="_resources/themes/portf/images/icon-blub.jpg" alt="light blub" class="img-fluid">
-                         <h3>Achieving your vision</h3>
+                    <div class="wow bounceIn service-thumb">
+                         <img src="_resources/themes/portf/images/icon-blub.jpg" alt="light blub" class="img-fluid home-service-icon">
+                         <h3>Achieve your vision</h3>
                          <p>I'm passionate about turning your ideas into beautiful and intuitive designs.</p>
                     </div>
                </div>
                <div class="col-md-3">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="0.3s">
-                         <img src="_resources/themes/portf/images/icon-cursor.jpg" alt="mouse cursor" class="img-fluid">
+                    <div class="wow bounceIn service-thumb" data-wow-delay="0.3s">
+                         <img src="_resources/themes/portf/images/icon-cursor.jpg" alt="mouse cursor" class="img-fluid home-service-icon">
                          <h3>UX and UI</h3>
                          <p>Friendly, functional and enjoyable user experiences.</p>
                     </div>
                </div>
                <div class="col-md-3">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="0.6s">
-                         <img src="_resources/themes/portf/images/icon-computer.jpg" alt="computer monitor" class="img-fluid">
+                    <div class="wow bounceIn service-thumb" data-wow-delay="0.6s">
+                         <img src="_resources/themes/portf/images/icon-computer.jpg" alt="computer monitor" class="img-fluid home-service-icon">
                          <h3>Frontend Design</h3>
                          <p>I use CSS & HTML to create modern, professional looking designs. Check out my projects below.</p>
                     </div>
                </div>
                <div class="col-md-3">
-                    <div class="wow fadeIn service-thumb" data-wow-delay="0.9s">
-                         <img src="_resources/themes/portf/images/icon-code.jpg" alt="code symbol" class="img-fluid">
+                    <div class="wow bounceIn service-thumb" data-wow-delay="0.9s">
+                         <img src="_resources/themes/portf/images/icon-code.jpg" alt="code symbol" class="img-fluid home-service-icon">
                          <h3>Backend Coding</h3>
                          <p>I work with Javascript and PHP and focus on clean, elegant and efficient code.</p>
                     </div>

@@ -38,6 +38,7 @@
   $('#nav-hamburger').click(function() {
     console.log("clicked");
     $('.animated-icon').toggleClass('open');
+    $('.navbar-expand-lg').toggleClass('mobile-menu-open');
   });
 
 

@@ -307,6 +307,12 @@ a:hover, a:active, a:focus {
       opacity:0;
 }
 
+.mobile-menu-open {
+  padding-bottom:30px;
+  box-shadow: 0px 0px 25px -3px rgba(86, 86, 86, 0.20);
+}
+
+
 .custom-navbar li a {
     color: #333;
     margin-left:20px;
@@ -363,7 +369,7 @@ a:hover, a:active, a:focus {
 /*navbar icon*/
 
 .animated-icon{
-width: 30px;
+width: 20px;
 height: 20px;
 position: relative;
 margin: 0px;
@@ -409,11 +415,11 @@ top: 0px;
 }
 
 .animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
-top: 10px;
+top: 7px;
 }
 
 .animated-icon span:nth-child(4) {
-top: 20px;
+top: 14px;
 }
 
 .animated-icon.open span:nth-child(1) {
@@ -445,7 +451,6 @@ left: 50%;
 .navbar-collapse li {
   text-align:center;
 }
-
 
 /*---------------------------------------
     Home section              
@@ -795,8 +800,16 @@ footer {
 -----------------------------------------*/
 
 @media only screen and (max-width: 580px) {
+
+/*typography*/
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
   h1 {
     font-size: 32px;
+    line-height: 39px;
   }
 
   h2 {
@@ -808,18 +821,66 @@ footer {
     font-size: 22px;
     line-height: inherit;
   }
+
+  p{
+    font-size: calc(1.1rem + 0.3vw);
+    line-height: calc(1.4rem + 0.5vw);
+  }
+
+    /*general*/
+  .section-title {
+    padding-bottom:0px;
+  }
+   .squeeze-in {
+    padding:0px;
+  }
+
+  /*home hero section*/
+
+  #home .home-img {
+    height:50vh;
+    margin-top:40px;
+    background-position:100%;
+  }
+  #home .home-thumb {
+    padding:0px;
+    align-items: flex-start;
+    text-align:center;
+    height: auto;
+  }
+    #home .home-thumb h1{
+    padding-top:0px;
+  }
+  .button a, .cta-btn {
+    margin-top: 15px;
+  }
+
+  .home-service-icon {
+    max-width:75%;
+  }
+
+  /*service*/
+
+  #service, .large-section {
+    padding:30px 0px;
+  }
+
+ 
+
+  #service .service-thumb {
+    padding:0px;
+  }
+
+
 }
 
 @media only screen and (max-width: 767px) {
-  .custom-navbar .navbar-brand {
-    line-height: 18px;
-  }
 
-  #home .home-thumb, #projects-banner .projects-thumb {
+/*  #home .home-thumb, #projects-banner .projects-thumb {
     height: auto;
     padding-top: 32px;
     padding-bottom: 12px;
-  }
+  }*/
 
   #home .container, 
   #projects-banner .container,
