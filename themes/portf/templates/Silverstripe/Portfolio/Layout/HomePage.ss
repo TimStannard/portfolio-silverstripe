@@ -2,10 +2,10 @@
 <section id="home">
      <div class="container-fluid squeeze-in">
           <div class="row">
-               <div class="col-md-5 col-sm-5">
+               <div class="col-md-5 col-sm-12">
                     <div class="home-img wow bounceIn"></div>
                </div>
-               <div class="col-md-7 col-sm-7">
+               <div class="col-md-7 col-sm-12">
                     <div class="home-thumb">
                          <div class="section-title">
                               <h1 class="ml3">
