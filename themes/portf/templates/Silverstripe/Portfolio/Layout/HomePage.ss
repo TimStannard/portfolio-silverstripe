@@ -1,6 +1,6 @@
 <!-- Home Section -->
 <section id="home">
-     <div class="container-fluid">
+     <div class="container-fluid squeeze-in">
           <div class="row">
                <div class="col-md-5 col-sm-5">
                     <div class="home-img wow bounceIn"></div>
@@ -28,7 +28,7 @@
                <div class="col-md-3">
                     <div class="wow bounceIn service-thumb">
                          <img src="_resources/themes/portf/images/icon-blub.jpg" alt="light blub" class="img-fluid home-service-icon">
-                         <h3>Achieve your vision</h3>
+                         <h3>Achieve Your Vision</h3>
                          <p>I'm passionate about turning your ideas into beautiful and intuitive designs.</p>
                     </div>
                </div>
@@ -72,7 +72,7 @@
           </div>
      </div>
      <div id="all-projects">
-          <div class="container-fluid">
+          <div class="container-fluid squeeze-in">
                <div class="row">
                     <% loop $ChildrenOf(my-projects) %>
                     <% if $Featured %>
@@ -84,7 +84,7 @@
                          <% else %>
                          <p>$Content.FirstSentence</p>
                          <% end_if %>
-                         <span class="button"><a href="$Link">View case study</a></h3></span>
+                         <span class="button"><a href="$Link">View Case Study</a></h3></span>
                     </div>
                     <% end_if %>
                     <% end_loop %>

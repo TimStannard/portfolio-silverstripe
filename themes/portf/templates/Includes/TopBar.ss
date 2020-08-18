@@ -1,6 +1,5 @@
  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
- <div class="container">
-     <a class="navbar-brand" href="#">Navbar</a>
+     <a class="navbar-brand" href="#"></a>
    <!-- Collapse button -->
   <button class="navbar-toggler" id="nav-hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,6 +12,5 @@
           <li><a class="$LinkingMode" href="$Link" title="Go to the $Title page">$MenuTitle</a></li>
           <% end_loop %>
        </ul>
-  </div>
 </div>
 </nav>
