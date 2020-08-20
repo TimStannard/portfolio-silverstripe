@@ -1,5 +1,5 @@
 <!-- Home Section -->
-<section id="home">
+<section id="home-hero">
      <div class="container-fluid squeeze-in">
           <div class="row">
                <div class="col-md-5 col-sm-12">

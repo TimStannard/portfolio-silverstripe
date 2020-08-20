@@ -100,10 +100,7 @@ strong {
 
 p {
   color: #666;
-  /*font-size: 18px;*/
   font-weight: 400;
-  /*line-height: 28px;*/
-  /*letter-spacing: 0.2px;*/
 }
 
 .section-btn {
@@ -147,17 +144,17 @@ p {
 
 #about,
 #service,
-#home-projects,
+#home-hero-projects,
 #education,
 #contact {
   position: relative;
 }
 
-#home .container,
+#home-hero .container,
 #projects-banner .container,
 #all-projects .container,
 #about .container,
-#home-projects .container,
+#home-hero-projects .container,
 #service .container,
 #education .container,
 #contact .container {
@@ -459,27 +456,26 @@ a:focus {
     Home section              
 -----------------------------------------*/
 
-#home h1 {
+#home-hero h1 {
   padding-bottom: 30px;
   padding-top: 0vh;
 }
 
-#home .col-md-6 {
+#home-hero .col-md-6 {
   padding-right: 0;
   padding-left: 0;
 }
 
-#home .home-img {
+#home-hero .home-img {
   background: url('../images/man.png') no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  width: 100%;
-  height: 50vh;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  width: 90%;
+  margin: 60px auto 30px auto;
+  height: 44vh;
 }
 
-#home .home-thumb {
+#home-hero .home-thumb {
   padding: 0px 15px;
   align-items: flex-start;
   text-align: center;
@@ -498,7 +494,7 @@ a:focus {
   max-width: 75%;
 }
 
-    #home .home-thumb p {
+    #home-hero .home-thumb p {
       font-size:20px;
       line-height:28px;
     }
@@ -537,6 +533,7 @@ p,
   }
   .sm-red-title>h2 {
     font-size: 22px;
+    text-align:center;
   }
 
 
@@ -639,46 +636,20 @@ p,
     Home - projects section              
 -----------------------------------------*/
 
-#home-projects .media-heading {
+#home-hero-projects .media-heading {
   margin-bottom: 0px;
 }
 
-#home-projects small {
+#home-hero-projects small {
   color: #633;
   font-weight: bold;
 }
 
-#home-projects h2,
+#home-hero-projects h2,
 .text-center {
   text-align: center;
 }
 
-
-/*---------------------------------------
-    Education section              
------------------------------------------*/
-
-#education {
-  background: white;
-}
-
-#education .education-img {
-  background: url('../images/education-img.jpg') no-repeat;
-}
-
-#education .media-heading {
-  margin-bottom: 0px;
-}
-
-#education .media .fa {
-  font-size: 42px;
-  margin-right: 14px;
-}
-
-#education small {
-  color: #886D1E;
-  font-weight: bold;
-}
 
 
 /*---------------------------------------
@@ -845,8 +816,8 @@ footer {
   h2,
   h3,
   p,
-  #home h1,
-  #home p {
+  #home-hero h1,
+  #home-hero p {
     text-align: center;
     max-width: 100%;
   }
@@ -861,39 +832,11 @@ footer {
   .button {
     display: inline-block;
   }
-  /*  .red-divider {
-    margin-bottom:30px;
-  }*/
-  /*navbar*/
+  
   .custom-navbar li a {
     margin: 0;
   }
-  /*home hero section*/
-  /*
-  #home .home-img {
-    height:50vh;
-    margin-top:40px;
-    background-position:100%;
-  }
-  #home .home-thumb {
-    padding:0px;
-    align-items: flex-start;
-    text-align:center;
-    height: auto;
-  }
-    #home .home-thumb h1{
-    padding-top:0px;
-  }
- .cta-btn {
-    margin-top: 15px;
-  }
-   .button a {
-    margin-top:0px;
-   }
-
-  .home-service-icon {
-    max-width:75%;
-  }*/
+  
   /*service*/
   #service,
   .large-section {
@@ -939,15 +882,15 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
-  div {
+  .collapse {
     background: lightgrey;
   }
   /*home*/
-  #home .home-img {
+/*  #home-hero .home-img {
       margin-top: 10vh;
       margin-bottom:5vh;
-  }
-  #home .home-thumb p {
+  }*/
+  #home-hero .home-thumb p {
   font-size: calc(1.1rem + 0.3vw);
   line-height: calc(1.4rem + 0.5vw);
 
@@ -958,7 +901,7 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-  div {
+  .collapse {
     background: yellow;
   }
   /*general*/
@@ -996,16 +939,22 @@ p {
     margin-bottom: 30px;
 }
 
+  .sm-red-title>h2 {
+    font-size: calc(1.2rem + 0.3vw);
+  }
+
   /*home*/
-  #home h1 {
+  #home-hero h1 {
     max-width: 50vw;
   }
   .section-title p {
-    max-width: 50vw;
+    max-width: 60vw;
   }
-  #home .home-img {
+  #home-hero .home-img {
     margin-top: 0px;
     background-position: 50% 44%;
+    height: 42vh;
+    width:100%;
   }
   #service .service-thumb {
     padding: 0px;
@@ -1013,34 +962,40 @@ p {
   #contact .contact-form {
     max-width: 80vw;
   }
-  #home h1 {
+  #home-hero h1 {
     padding-bottom: 28px;
-    padding-top: 10vh;
+    padding-top: 5vh;
   }
-  #home .col-md-6 {
+  #home-hero .col-md-6 {
     padding-right: 0;
     padding-left: 0;
   }
-  #home .home-img {
-    background-position: 50% 50%;
-    height: 80vh;
+  #home-hero .home-img {
+    background-position: 50% 40%;
+      margin-bottom: 0px;
+      margin-top:30px;
   }
-  #home .home-thumb {
+  #home-hero .home-thumb {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 80vh;
-    padding: 12vh 45px 0 45px;
+    height: auto;
+    padding: 4vh 45px 0 45px;
     text-align: left;
+  }
+  #home-hero .container-fluid {
+    padding-top:90px;
+    padding-bottom:60px;
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    div {
+    .collapse {
       background: lightgreen;
-      /*general*/
+
     }
+          /*general*/
     .squeeze-in {
       padding: 0px 7vw;
     }
@@ -1051,16 +1006,16 @@ p {
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1400px) {
-    div {
-      background: white;
-    }
+.collapse {
+  background: white;
+}
     /*general*/
     h1 {
       line-height: 4.5rem;
     }
     /*home*/
-    #home h1,
-    #home p {
+    #home-hero h1,
+    #home-hero p {
       padding-bottom: 30px;
       margin-bottom: 0;
     }
@@ -1068,11 +1023,14 @@ p {
       padding-top: 0px;
       margin: 0px;
     }
-    #home h1,
-    #home p {
+    #home-hero h1,
+    #home-hero p {
       max-width: 35vw;
     }
-    #home .home-img {
-      background-position: 50% 60%;
+    #home-hero .home-img {
+      background-position: 50% 50%;
+      max-height: 800px;
     }
+ 
+
   }
