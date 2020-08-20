@@ -482,7 +482,7 @@ a:focus {
 }
 
 .large-section {
-  padding: 60px 15px;
+  padding: 60px 0px;
 }
 
 #service .service-thumb {
@@ -921,7 +921,6 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     height: auto;
-    padding: 4vh 45px 0 45px;
     text-align: left;
   }
   #home-hero .container-fluid {
@@ -944,6 +943,9 @@ footer {
     /*home*/
       #contact .contact-form {
     max-width: 60vw;
+    } 
+    #home-hero .home-thumb {
+    padding: 4vh 45px 0 45px;
     }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
