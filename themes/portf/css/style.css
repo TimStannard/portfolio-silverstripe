@@ -50,8 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-style: normal;
-  font-weight: 300;
+      margin-bottom: 0px;
 }
 
 h1,
@@ -67,26 +66,27 @@ h3 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    line-height: 50px;
 
-  h1 {
-    font-size: 32px;
-    line-height: 39px;
-    margin-bottom: 0px;
-  }
-  h2 {
-    font-size: 28px;
-    line-height: inherit;
-  }
-  h3 {
-    font-size: 22px;
-    line-height: inherit;
-  }
+}
+
+h2 {
+  font-size: 28px;
+  line-height: inherit;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: inherit;
+    padding: 30px 0px 15px 0px;
+}
 
 h4 {
   color: #333;
   font-size: 18px;
   font-weight: 500;
-  padding-top: 6px;
 }
 
 h5 {
@@ -110,7 +110,7 @@ p {
   color: #232B2B;
   font-size: 13px;
   font-weight: bold;
-  letter-spacing: 1.6px;
+  /*letter-spacing: 1.6px;*/
   padding: 12px 36px;
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
@@ -163,12 +163,7 @@ p {
   margin: 0;
 }
 
-.large-section {
-  padding: 10vh 0px;
-}
-
 #service,
-#quotes,
 footer {
   text-align: center;
 }
@@ -482,27 +477,31 @@ a:focus {
   height: auto;
 }
 
-.cta-btn {
-  /*margin-top: 15px;*/
-}
-
 .button a {
   margin-top: 0px;
+}
+
+.large-section {
+  padding: 60px 15px;
+}
+
+#service .service-thumb {
+  padding: 0px;
 }
 
 .home-service-icon {
   max-width: 75%;
 }
 
-    #home-hero .home-thumb p {
-      font-size:20px;
-      line-height:28px;
-    }
+#home-hero .home-thumb p {
+  font-size: 20px;
+  line-height: 28px;
+  /*margin-bottom:15px;*/
+}
 
 .button a,
 .cta-btn {
   display: inline-block;
-  padding: 4px 0px;
   border-bottom: 2px solid #ff65593d;
   color: #FF6559;
   font-size: calc(1rem + 0.3vw);
@@ -526,15 +525,20 @@ a:focus {
 }
 
 p,
-  .button a {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 30px;
-  }
-  .sm-red-title>h2 {
-    font-size: 22px;
-    text-align:center;
-  }
+.button a {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom:15px;
+}
+
+.sm-red-title>h2 {
+  font-size: 22px;
+  text-align: center;
+}
 
 
 /*---------------------------------------
@@ -575,10 +579,6 @@ p,
   border-radius: 10px;
 }
 
-.project-item h3 {
-  padding-top: 30px;
-}
-
 
 /*---------------------------------------
    About section              
@@ -617,18 +617,15 @@ p,
 -----------------------------------------*/
 
 #service .service-thumb {
-  padding: 0px 22px 22px 22px;
+  padding: 0px 15px 15px 15px;
 }
 
-#service .service-thumb .far,
-#service .service-thumb .fas,
-#service .service-thumb .fa {
-  font-size: calc(1rem + 2vw);
-  padding-bottom: 22px;
+#service {
+  padding-top:30px;
 }
 
-.banner-pastel {
-  padding: 0px 25px;
+#service h3 {
+  padding-top:15px;
 }
 
 
@@ -651,7 +648,6 @@ p,
 }
 
 
-
 /*---------------------------------------
     Contact section              
 -----------------------------------------*/
@@ -667,15 +663,20 @@ p,
   min-height: 75vh;
 }
 
-#contact .contact-info {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
 
 #contact {
   background: url("../images/large-bg.jpg");
   background-size: cover;
   background-position: 0% 70%;
+}
+
+#contact p {
+  margin-bottom:30px;
+}
+
+
+#contact h2 {
+  margin-bottom:15px;
 }
 
 #contact .form-control::-moz-placeholder {
@@ -745,11 +746,12 @@ p,
 -----------------------------------------*/
 
 footer {
-  padding: 60px 0px;
+  padding: 30px 15px 5px 15px;
 }
 
 .footer-copyright p {
   font-size: calc(0.8rem + 0.3vw);
+  margin-bottom: 0px;
 }
 
 
@@ -791,92 +793,46 @@ footer {
 }
 
 
-/*text animations*/
+/*clean this up */
 
-
-/*---------------------------------------
-   Mobile Responsive         
------------------------------------------*/
-
-@media(min-width:768px) {
-  .custom-navbar {
-    padding: 12px 10vh;
-    border-bottom: 0;
-    background: 0 0;
-  }
-  .custom-navbar.top-nav-collapse {
-    background: #ffffff;
-    padding: 0;
-  }
+.section-title {
+  padding-bottom: 0px;
 }
 
-@media only screen and (max-width: 580px) {
-  /*typography*/
-  h1,
-  h2,
-  h3,
-  p,
-  #home-hero h1,
-  #home-hero p {
-    text-align: center;
-    max-width: 100%;
-  }
-  
-  /*general*/
-  .section-title {
-    padding-bottom: 0px;
-  }
-  .squeeze-in {
-    padding: 0px;
-  }
-  .button {
-    display: inline-block;
-  }
-  
-  .custom-navbar li a {
-    margin: 0;
-  }
-  
-  /*service*/
-  #service,
-  .large-section {
-    padding: 30px 0px;
-  }
-  #service .service-thumb {
-    padding: 0px;
-  }
-  /*projects*/
-  #all-projects {
-    padding: 0px 15px;
-  }
-  .project-item {
-    padding: 0px 0px 30px 0px;
-    text-align: center;
-  }
-  /*contact form*/
-  #contact .container-fluid {
-    padding: 30px 0px;
-  }
-  .profile-img {
-    margin: 0 auto 30px auto;
-    max-width: 150px;
-  }
-  #contact {
-    padding: 30px 15px;
-  }
-  #contact .contact-form {
-    padding: 0px;
-    max-width: 100%;
-  }
-  /*footer*/
-  footer {
-    /*display: none;*/
-    padding: 30px 15px 5px 15px;
-  }
-  footer p {
-    margin-bottom: 0px;
-  }
+.squeeze-in {
+  padding: 0px;
 }
+
+.button {
+  display: inline-block;
+}
+
+#contact .container-fluid {
+  padding: 30px 0px;
+}
+
+.profile-img {
+  margin: 0 auto 30px auto;
+  max-width: 150px;
+}
+
+#contact {
+  padding: 30px 15px;
+}
+
+#contact .contact-form {
+  padding: 0px;
+  max-width: 100%;
+}
+
+
+/*------------------------------------------------*/
+
+
+/*Responsive*/
+
+
+/*---------------------------------------------------*/
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -885,15 +841,9 @@ footer {
   .collapse {
     background: lightgrey;
   }
-  /*home*/
-/*  #home-hero .home-img {
-      margin-top: 10vh;
-      margin-bottom:5vh;
-  }*/
   #home-hero .home-thumb p {
-  font-size: calc(1.1rem + 0.3vw);
-  line-height: calc(1.4rem + 0.5vw);
-
+    font-size: calc(1.1rem + 0.3vw);
+    line-height: calc(1.4rem + 0.5vw);
   }
 }
 
@@ -914,35 +864,28 @@ footer {
   h1 {
     line-height: 3.5rem;
   }
-
-h1 {
-  font-size: calc(1.9rem + 1.9vw);
-  padding-bottom: 14px;
-  margin-bottom: 0px;
-  line-height: 3.2rem;
-}
-
-h2 {
-  font-size: calc(1.3rem + 1vw);
-  line-height: 3.25rem;
-  margin-top: 0px;
-}
-
-h3 {
-  font-size: calc(0.6rem + 1vw);
-  line-height: 32px;
-  padding-bottom: 6px;
-}
-p {
+  h1 {
+    font-size: calc(1.9rem + 1.9vw);
+    margin-bottom: 0px;
+    line-height: 3.2rem;
+  }
+  h2 {
+    font-size: calc(1.3rem + 1vw);
+    line-height: 3.25rem;
+    margin-top: 0px;
+  }
+  h3 {
+    font-size: calc(0.6rem + 1vw);
+    line-height: 32px;
+  }
+  p {
     font-size: calc(1rem + 0.3vw);
     line-height: calc(1.4rem + 0.5vw);
     margin-bottom: 30px;
-}
-
+  }
   .sm-red-title>h2 {
     font-size: calc(1.2rem + 0.3vw);
   }
-
   /*home*/
   #home-hero h1 {
     max-width: 50vw;
@@ -954,16 +897,13 @@ p {
     margin-top: 0px;
     background-position: 50% 44%;
     height: 42vh;
-    width:100%;
+    width: 100%;
   }
   #service .service-thumb {
     padding: 0px;
   }
-  #contact .contact-form {
-    max-width: 80vw;
-  }
   #home-hero h1 {
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     padding-top: 5vh;
   }
   #home-hero .col-md-6 {
@@ -972,8 +912,8 @@ p {
   }
   #home-hero .home-img {
     background-position: 50% 40%;
-      margin-bottom: 0px;
-      margin-top:30px;
+    margin-bottom: 0px;
+    margin-top: 30px;
   }
   #home-hero .home-thumb {
     -webkit-box-align: center;
@@ -985,17 +925,15 @@ p {
     text-align: left;
   }
   #home-hero .container-fluid {
-    padding-top:90px;
-    padding-bottom:60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
-
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .collapse {
       background: lightgreen;
-
     }
-          /*general*/
+    /*general*/
     .squeeze-in {
       padding: 0px 7vw;
     }
@@ -1003,12 +941,16 @@ p {
     .custom-navbar {
       padding: 30px 10vh;
     }
+    /*home*/
+      #contact .contact-form {
+    max-width: 60vw;
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1400px) {
-.collapse {
-  background: white;
-}
+    .collapse {
+      background: white;
+    }
     /*general*/
     h1 {
       line-height: 4.5rem;
@@ -1031,6 +973,7 @@ p {
       background-position: 50% 50%;
       max-height: 800px;
     }
- 
-
+      #contact .contact-form {
+    max-width: 45vw;
+    }
   }
