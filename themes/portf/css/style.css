@@ -24,12 +24,20 @@ Author URI: https://timothystannard.com
 Tags: Silverstripe, Website
 */
 
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
 body {
-  background: #ffffff;
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
   overflow-x: hidden;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -39,163 +47,15 @@ body {
   font-size: 100%;
 }
 
-
-/*---------------------------------------
-    Typography              
------------------------------------------*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-      margin-bottom: 0px;
+::selection {
+  background: #feffa1;
 }
-
-h1,
-h2,
-h3 {
-  font-family: 'Source Serif Pro', serif;
-  font-weight: 600;
-}
-
-.sm-red-title>h2 {
-  font-size: calc(0.7rem + 0.9vw);
-  color: #FF6559;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-h1 {
-    font-size: 40px;
-    line-height: 50px;
-
-}
-
-h2 {
-  font-size: 28px;
-  line-height: inherit;
-}
-
-h3 {
-  font-size: 22px;
-  line-height: inherit;
-    padding: 30px 0px 15px 0px;
-}
-
-h4 {
-  color: #333;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-h5 {
-  color: #666666;
-}
-
-strong {
-  color: #232B2B;
-  font-weight: normal;
-}
-
-p {
-  color: #666;
-  font-weight: 400;
-}
-
-.section-btn {
-  background-color: transparent;
-  border: 1px solid #232B2B;
-  border-radius: 100px;
-  color: #232B2B;
-  font-size: 13px;
-  font-weight: bold;
-  /*letter-spacing: 1.6px;*/
-  padding: 12px 36px;
-  margin-top: 42px;
-  transition: all 0.4s ease-in-out;
-  text-transform: uppercase;
-}
-
-.section-btn:hover {
-  background: #FF6559;
-  border-color: transparent;
-  color: #ffffff;
-}
-
-.btn-success:focus {
-  background-color: #000;
-  border-color: transparent;
-}
-
-.parallax-section {
-  background-attachment: fixed !important;
-  background-size: contain !important;
-}
-
-.section-title {
-  position: relative;
-  padding-bottom: 22px;
-}
-
-.section-title p {
-  max-width: 100vw;
-}
-
-#about,
-#service,
-#home-hero-projects,
-#education,
-#contact {
-  position: relative;
-}
-
-#home-hero .container,
-#projects-banner .container,
-#all-projects .container,
-#about .container,
-#home-hero-projects .container,
-#service .container,
-#education .container,
-#contact .container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#service,
-footer {
-  text-align: center;
-}
-
-.background-image {
-  background-position: 50% 50% !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-  min-height: 75vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-/*---------------------------------------
-    General               
------------------------------------------*/
-
-html {
-  -webkit-font-smoothing: antialiased;
+::-moz-selection {
+  background: #feffa1; /* Gecko Browsers */
 }
 
 a {
-  color: #333;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  text-decoration: none !important;
+  text-decoration: none!important;
 }
 
 a:hover,
@@ -218,20 +78,23 @@ a:focus {
   box-sizing: border-box;
 }
 
+/*general elements across site*/
+
 .red-divider {
   width: 20px;
   height: 2px;
   margin: 10px auto 60px auto;
   background: #FF6559;
-  ;
-}
-
-.float-right {
-  float: right;
 }
 
 .align-right {
   text-align: right;
+}
+
+/*non full screen sections*/
+
+.squeeze-in {
+  padding: 0px;
 }
 
 
@@ -241,6 +104,91 @@ a:focus {
   max-width: 100%;
   height: auto;
 }
+
+
+
+/*---------------------------------------
+    Typography              
+-----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+}
+
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+h2 {
+  font-size: 28px;
+  line-height: inherit;
+}
+
+.sm-red-title>h2 {
+  font-size: 22px;
+  color: #FF6559;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 22px;
+  line-height: inherit;
+  padding: 30px 0px 15px 0px;
+}
+
+h4 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h5 {
+  color: #666666;
+}
+
+p {
+  color: #666;
+  font-weight: 400;
+}
+
+
+.section-title p {
+  max-width: 100vw;
+}
+
+
+.container-fluid{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#service,
+footer {
+  text-align: center;
+}
+
+.row {
+  margin:0px;
+}
+
 
 
 /*---------------------------------------
@@ -306,14 +254,6 @@ a:focus {
   transition: all 0.3s ease-in-out;
 }
 
-.custom-navbar .navbar-brand {
-  color: #333;
-  font-size: 20px;
-  line-height: 38px;
-  font-weight: 500;
-  opacity: 0;
-}
-
 .mobile-menu-open {
   padding-bottom: 30px;
   box-shadow: 0px 0px 25px -3px rgba(86, 86, 86, 0.20);
@@ -321,7 +261,7 @@ a:focus {
 
 .custom-navbar li a {
   color: #333;
-  margin-right: 20px;
+  margin-right: 30px;
   font-size: 18px;
   font-weight: 400;
   line-height: 40px;
@@ -401,7 +341,7 @@ a:focus {
 }
 
 
-/* Icon 3*/
+/* Icon bars and animation*/
 
 .animated-icon span:nth-child(1) {
   top: 0px;
@@ -448,7 +388,7 @@ a:focus {
 
 
 /*---------------------------------------
-    Home section              
+    Home page              
 -----------------------------------------*/
 
 #home-hero h1 {
@@ -496,7 +436,7 @@ a:focus {
 #home-hero .home-thumb p {
   font-size: 20px;
   line-height: 28px;
-  /*margin-bottom:15px;*/
+  margin-bottom: 30px;
 }
 
 .button a,
@@ -511,7 +451,6 @@ a:focus {
 
 .cta-btn {
   font-size: calc(1.2rem + 0.3vw);
-  /*margin-top: 20px;*/
 }
 
 .cta-btn a {
@@ -535,86 +474,9 @@ p {
   margin-bottom:15px;
 }
 
-.sm-red-title>h2 {
-  font-size: 22px;
-  text-align: center;
-}
 
+/*----------------Service blurbs section*/
 
-/*---------------------------------------
-   Project section              
------------------------------------------*/
-
-#projects-banner h1 {
-  padding-bottom: 18px;
-}
-
-#projects-banner .col-md-6 {
-  background: white;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-#projects-banner .projects-img {
-  background: no-repeat url('../images/pastel-responsive.png') center center / contain;
-  background-position: 50% 60%;
-  width: 100%;
-  height: 100vh;
-}
-
-#projects-banner .projects-thumb {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 45px 0 45px;
-}
-
-.project-item img {
-  border-radius: 10px;
-}
-
-
-/*---------------------------------------
-   About section              
------------------------------------------*/
-
-#about .about-img {
-  background: url('../images/about-img.jpg') no-repeat;
-}
-
-#about .about-thumb,
-#about .skill-thumb {
-  padding: 22px 32px 32px 32px;
-}
-
-#about .progress {
-  background: #ffffff;
-  border-radius: 0px;
-  box-shadow: none;
-  height: 2px;
-}
-
-#about .progress-bar-primary {
-  background: #232B2B;
-}
-
-#about strong,
-#about span {
-  font-weight: bold;
-  display: inline-block;
-  padding-bottom: 8px;
-}
-
-
-/*---------------------------------------
-    Service section              
------------------------------------------*/
 
 #service .service-thumb {
   padding: 0px 15px 15px 15px;
@@ -629,70 +491,65 @@ p {
 }
 
 
-/*---------------------------------------
-    Home - projects section              
------------------------------------------*/
+/*--------------------Contact section*/
 
-#home-hero-projects .media-heading {
-  margin-bottom: 0px;
+
+.profile-img {
+  margin: 0 auto 30px auto;
+  max-width: 150px;
 }
 
-#home-hero-projects small {
-  color: #633;
-  font-weight: bold;
+#home-contact-section {
+  padding: 30px 0px;
 }
 
-#home-hero-projects h2,
-.text-center {
-  text-align: center;
-}
-
-
-/*---------------------------------------
-    Contact section              
------------------------------------------*/
-
-#contact .contact-form {
-  padding: 22px 32px 22px 32px;
-  max-width: 50vw;
+#home-contact-section .contact-form {
+  padding: 0px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-#contact .contact-img {
+
+#home-contact-section .container-fluid {
+  padding: 30px 0px;
+}
+
+
+#home-contact-section .contact-img {
   background: url('../images/contact-img.jpg') no-repeat;
   min-height: 75vh;
 }
 
 
-#contact {
+#home-contact-section {
   background: url("../images/large-bg.jpg");
   background-size: cover;
   background-position: 0% 70%;
 }
 
-#contact p {
+#home-contact-section p {
   margin-bottom:30px;
 }
 
 
-#contact h2 {
+#home-contact-section h2 {
   margin-bottom:15px;
 }
 
-#contact .form-control::-moz-placeholder {
+#home-contact-section .form-control::-moz-placeholder {
   color: #333;
-  opacity: 1
+  opacity: 1;
 }
 
-#contact .form-control:-ms-input-placeholder {
-  color: #333
+#home-contact-section .form-control:-ms-input-placeholder {
+  color: #333;
 }
 
-#contact .form-control::-webkit-input-placeholder {
-  color: #333
+#home-contact-section .form-control::-webkit-input-placeholder {
+  color: #333;
 }
 
-#contact .form-control {
+#home-contact-section .form-control {
   background: white;
   border: none;
   border-bottom: 2px solid rgb(0, 0, 0, 0.1);
@@ -706,15 +563,15 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-#contact .form-control:focus {
+#home-contact-section .form-control:focus {
   border-bottom-color: #ffffff;
 }
 
-#contact input {
+#home-contact-section input {
   height: auto;
 }
 
-#contact input[type="submit"] {
+#home-contact-section input[type="submit"] {
   background: #ff6559;
   border: 2px solid #ff6559;
   border-radius: 40px;
@@ -725,13 +582,13 @@ p {
   margin: 0 auto;
 }
 
-#contact input[type="submit"]:hover {
+#home-contact-section input[type="submit"]:hover {
   background: white;
   border-color: #ff6559;
   color: #ff6559;
 }
 
-#contact .fa {
+#home-contact-section .fa {
   padding-right: 10px;
 }
 
@@ -792,38 +649,45 @@ footer {
   color: #FF6559;
 }
 
+/*---------------------------------------
+    Projects page          
+-----------------------------------------*/
 
-/*clean this up */
-
-.section-title {
-  padding-bottom: 0px;
+#projects-banner h1 {
+  padding-bottom: 18px;
 }
 
-.squeeze-in {
-  padding: 0px;
+#projects-banner .col-md-6 {
+  background: white;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.button {
-  display: inline-block;
+#projects-banner .projects-img {
+  background: no-repeat url('../images/pastel-responsive.png') center center / contain;
+  background-position: 50% 60%;
+  width: 100%;
+  height: 100vh;
 }
 
-#contact .container-fluid {
-  padding: 30px 0px;
+#projects-banner .projects-thumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 45px 0 45px;
 }
 
-.profile-img {
-  margin: 0 auto 30px auto;
-  max-width: 150px;
+.project-item img {
+  border-radius: 10px;
+  width:100%;
 }
 
-#contact {
-  padding: 30px 15px;
-}
-
-#contact .contact-form {
-  padding: 0px;
-  max-width: 100%;
-}
 
 
 /*------------------------------------------------*/
@@ -941,7 +805,7 @@ footer {
       padding: 30px 10vh;
     }
     /*home*/
-      #contact .contact-form {
+      #home-contact-section .contact-form {
     max-width: 60vw;
     } 
     #home-hero .home-thumb {
@@ -975,7 +839,7 @@ footer {
       background-position: 50% 50%;
       max-height: 800px;
     }
-      #contact .contact-form {
+      #home-contact-section .contact-form {
     max-width: 45vw;
     }
   }

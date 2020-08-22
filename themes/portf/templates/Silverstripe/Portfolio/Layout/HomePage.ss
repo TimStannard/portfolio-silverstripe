@@ -97,7 +97,7 @@
      </div>
 </section>
 <!-- Contact Section -->
-<section id="contact" class="large-section">
+<section id="home-contact-section" class="large-section">
      <div class="container-fluid">
      <div class="row">
           <div class="col col-sm">
