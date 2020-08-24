@@ -6,6 +6,7 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\TextareaField;
+use SilverStripe\Forms\LiteralField;
 use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\RequiredFields;
@@ -25,15 +26,17 @@ class ContactPageController extends PageController
         $fields = new FieldList( 
             new TextField('Name'), 
             new EmailField('Email'), 
-            new TextareaField('Message')
+            new TextareaField('Message'),
+            new LiteralField ( $name = "Captcha", $content = '<div></div>' )
         ); 
         $actions = new FieldList( 
             new FormAction('submit', 'Submit') 
         ); 
 
     $validator = new RequiredFields('Name', 'Email', 'Message');
-    return new Form($this, 'Form', $fields, $actions, $validator); 
-
+    $form = Form::create($this, 'ContactForm', $fields, $actions, $validator);
+    $form->enableSpamProtection();
+    return $form;
     }
 
      public function submit($data, $form) 
