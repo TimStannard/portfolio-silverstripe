@@ -35,7 +35,7 @@ SilverStripe\Core\Injector\Injector:
 SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
     default_spam_protector: UndefinedOffset\NoCaptcha\Forms\NocaptchaProtector
 
-    UndefinedOffset\NoCaptcha\Forms\NocaptchaField:
+UndefinedOffset\NoCaptcha\Forms\NocaptchaField:
     site_key: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" #Your site key (required)
     secret_key: "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe" #Your secret key (required)
     verify_ssl: true #Allows you to disable php-curl's SSL peer verification by setting this to false (optional, defaults to true)
@@ -46,3 +46,13 @@ SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
     proxy_server: "" #Your proxy server address (optional)
     proxy_port: "" #Your proxy server address port (optional)
     proxy_auth: "" #Your proxy server authentication information (optional)
+
+# The following options can also be specified through Environment variables with Injector config
+SilverStripe\Core\Injector\Injector:
+  UndefinedOffset\NoCaptcha\Forms\NocaptchaField:
+    properties:
+      SiteKey: '`6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI`'
+      SecretKey: '`6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe`'
+      ProxyServer: '`SS_OUTBOUND_PROXY`'
+      ProxyPort: '`SS_OUTBOUND_PROXY_PORT`'
+      ProxyAuth: '`SS_OUTBOUND_PROXY_AUTH`'

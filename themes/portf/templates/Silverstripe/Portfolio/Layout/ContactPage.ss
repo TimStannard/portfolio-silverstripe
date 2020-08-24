@@ -11,7 +11,7 @@
                     </div>
                     <p class="wow fadeIn" data-wow-delay="1s">Drop me a line below and I'll get back to you as soon as I can.</p>
                     <div class="contact-form">
-                    $Form
+                    $ContactForm
                     </div>
                </div>
           </div>
