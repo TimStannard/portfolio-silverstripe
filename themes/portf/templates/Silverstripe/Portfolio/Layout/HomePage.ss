@@ -1,12 +1,12 @@
 <!-- Home Section -->
-<section id="home-hero">
+<section id="home-hero" class="hero-section">
      <div class="container-fluid squeeze-in">
           <div class="row">
                <div class="col-md-5 col-sm-12">
-                    <div class="home-img wow bounceIn"></div>
+                    <div class="home-img hero-img wow bounceIn"></div>
                </div>
                <div class="col-md-7 col-sm-12">
-                    <div class="home-thumb">
+                    <div class="hero-text-content">
                          <div class="section-title">
                               <h1 class="ml3">
                                    <span class="text-wrapper">
@@ -107,27 +107,9 @@
                     </div>
                     <div class="wow fadeIn section-title" data-wow-delay="0.1">
                          <h2>Let's chat!</h2>
-                         $ContactForm
                     </div>
-                    <p class="wow fadeIn" data-wow-delay="1s">Drop me a line below and I'll get back to you as soon as I can.</p>
-                    <div class="contact-form">
-                         <div id="contact-form">
-                              <form action="#submit" method="post">
-                                   <div class="wow fadeInUp" data-wow-delay="0.2s">
-                                        <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
-                                   </div>
-                                   <div class="wow fadeInUp" data-wow-delay="0.3s">
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-                                   </div>
-                                   <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
-                                   </div>
-                                   <div class="wow fadeInUp col" data-wow-delay="0.5s">
-                                        <input name="submit" type="submit" class="form-control" id="submit" value="Send">
-                                   </div>
-                              </form>
-                         </div>
-                    </div>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">Drop me a line below and I'll get back to you as soon as I can.</p>
+                    <div class="wow fadeIn" data-wow-delay="1s">$ContactForm</div>
                </div>
           </div>
      </div>

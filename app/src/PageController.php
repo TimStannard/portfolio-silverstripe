@@ -23,10 +23,9 @@ use SilverStripe\Control\Email\Email;
     public function ContactForm() 
     { 
         $fields = new FieldList( 
-            new TextField('Name'), 
-            new EmailField('Email'), 
-            new TextareaField('Message'),
-            new LiteralField ( $name = "Captcha", $content = '<div></div>' )
+            TextField::create('Name','')->setAttribute('placeholder', 'Your name'),
+            EmailField::create('Email', '')->setAttribute('placeholder', 'Your email'),
+            TextareaField::create('Message', '')->setAttribute('placeholder', 'Your Message')
         ); 
         $actions = new FieldList( 
             new FormAction('submit', 'Submit') 
