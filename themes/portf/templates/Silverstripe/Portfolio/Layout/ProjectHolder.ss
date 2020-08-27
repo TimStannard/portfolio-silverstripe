@@ -26,7 +26,7 @@
                <div class="row">
                     <% loop $Children %>
                     <div class="item col-md-4 col-sm-4 project-item wow fadeIn silverstripe-image">
-                         <div>$Logo.ScaleWidth(500)</div>
+                         <div><a href="$Link">$Logo</a></div>
                          <h3>$Title</h3>
                          <% if $Blurb %>
                          <p>$Blurb</p>
@@ -45,7 +45,7 @@
      </div>
 </section>
 <!-- Contact Section -->
-<section id="home-contact-section" class="large-section">
+<section id="contact-section" class="large-section">
      <div class="container-fluid">
      <div class="row">
           <div class="col col-sm">
@@ -56,7 +56,7 @@
                     <div class="wow fadeIn section-title" data-wow-delay="0.1">
                          <h2>Let's chat!</h2>
                     </div>
-                    <p class="wow fadeIn" data-wow-delay="0.5s">Drop me a line below and I'll get back to you as soon as I can.</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">Drop me a line and I'll get back to you as soon as I can.</p>
                     <span class="button"><a href="contact">Contact me</a></span>
                </div>
           </div>

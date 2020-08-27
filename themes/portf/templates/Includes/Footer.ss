@@ -2,7 +2,7 @@
      <div class="container">
           <div class="row">
                <div class="col-md-12 col-sm-12">
-                    <% if $Menu(2) %>
+                    <%-- <% if $Menu(2) %>
                       <h3>Submenu: In this section</h3>
                         <ul class="subnav">  
                           <% loop $Menu(2) %>
@@ -10,7 +10,7 @@
                           <% end_loop %>
                         </ul>
                         <hr>
-                    <% end_if %>
+                    <% end_if %> --%>
                     <%-- <div>Breadcrumbs: $Breadcrumbs</div> --%>
                     <%-- <hr> --%>
                     <div class="wow fadeInUp footer-copyright">

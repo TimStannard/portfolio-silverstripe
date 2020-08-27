@@ -105,7 +105,20 @@ a:focus {
   height: auto;
 }
 
+.project-item img:hover {
+  opacity:0.6;
+}
 
+.project-item img {
+  transition:all 0.3s ease-in-out;
+
+}
+
+/*default color for links in hero*/
+
+.hero-section a {
+  color:#FF6559;
+}
 
 /*---------------------------------------
     Typography              
@@ -414,7 +427,7 @@ footer {
 }
 
 .hero-section .hero-text-content {
-  padding: 0px 15px;
+  padding: 0px;
   align-items: flex-start;
   text-align: center;
   height: auto;
@@ -470,11 +483,18 @@ p,
 .button a {
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 30px;
+}
+
+.button a {
+    margin-bottom: 30px;
 }
 
 p {
   margin-bottom:15px;
+}
+
+.contact-no-img .button a {
+  margin-bottom:0px;
 }
 
 
@@ -502,7 +522,7 @@ p {
   max-width: 150px;
 }
 
-#home-contact-section {
+#contact-section {
   padding: 30px 0px;
 }
 
@@ -513,42 +533,42 @@ p {
 }
 
 
-#home-contact-section .container-fluid {
+#contact-section .container-fluid {
   padding: 30px 0px;
 }
 
 
-#home-contact-section .contact-img {
+#contact-section .contact-img {
   background: url('../images/contact-img.jpg') no-repeat;
   min-height: 75vh;
 }
 
 
-#home-contact-section {
+#contact-section {
   background: url("../images/large-bg.jpg");
   background-size: cover;
-  background-position: 0% 70%;
+  background-position: 0% 55%;
 }
 
-#home-contact-section p {
+#contact-section p {
   margin-bottom:30px;
 }
 
 
-#home-contact-section h2 {
+#contact-section h2 {
   margin-bottom:15px;
 }
 
-#home-contact-section .form-control::-moz-placeholder {
+#contact-section .form-control::-moz-placeholder {
   color: #333;
   opacity: 1;
 }
 
-#home-contact-section .form-control:-ms-input-placeholder {
+#contact-section .form-control:-ms-input-placeholder {
   color: #333;
 }
 
-#home-contact-section .form-control::-webkit-input-placeholder {
+#contact-section .form-control::-webkit-input-placeholder {
   color: #333;
 }
 
@@ -588,7 +608,7 @@ p {
   cursor: pointer;
 }
 
-#home-contact-section .fa {
+#contact-section .fa {
   padding-right: 10px;
 }
 
@@ -601,7 +621,23 @@ p {
 #Nocaptcha-Form_ContactForm_Captcha>div {
 margin:27px auto 30px auto;
 }
+/*
+-----------------------------------------
 
+   About me page
+
+-----------------------------------------
+*/
+
+.hero-section .about-img {
+  background: url('../images/about-me-img.jpg') no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+#about-hero .col-md-7 p:last-of-type {
+  padding-bottom:30px;
+}
 
 /*---------------------------------------
    Footer section              
@@ -658,6 +694,12 @@ footer a {
   color: #FF6559;
 }
 
+.add-mic-icon:after {
+display:inline-block;
+content: "🎤";
+margin-right:5px;
+}
+
 /*---------------------------------------
     Projects page          
 -----------------------------------------*/
@@ -686,12 +728,21 @@ footer a {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
+  
+  /*general*/
+
   .collapse {
     background: lightgrey;
   }
   .hero-section .hero-text-content p {
     font-size: calc(1.1rem + 0.3vw);
-    line-height: calc(1.4rem + 0.5vw);
+    line-height: calc(1.4rem + 0.6vw);
+  }
+
+  /*about page*/
+
+  #about-hero .col-md-7 p:last-of-type {
+  padding-bottom:0px;
   }
 }
 
@@ -802,8 +853,13 @@ footer a {
     h1 {
       line-height: 4.5rem;
     }
+
+    .hero-section .hero-text-content p {
+      margin-bottom:0px;
+    }
+
     /*home*/
-    #home-contact-section h1,
+    #contact-section h1,
     .hero-section p {
       padding-bottom: 30px;
       margin-bottom: 0;

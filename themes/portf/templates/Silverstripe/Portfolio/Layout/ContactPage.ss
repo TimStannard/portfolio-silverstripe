@@ -1,4 +1,4 @@
-<section id="home-contact-section" class="large-section contact-page-hero">
+<section id="contact-section" class="large-section contact-page-hero">
      <div class="container-fluid">
      <div class="row">
           <div class="col col-sm">

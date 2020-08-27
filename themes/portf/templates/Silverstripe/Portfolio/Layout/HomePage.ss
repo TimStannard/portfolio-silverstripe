@@ -77,7 +77,7 @@
                     <% loop $ChildrenOf(my-projects) %>
                     <% if $Featured %>
                     <div class="item col-md-4 col-sm-4 project-item wow fadeIn silverstripe-image">
-                         <div>$Logo.ScaleWidth(500)</div>
+                         <div><a href="$Link">$Logo</a></div>
                          <h3>$Title</h3>
                          <% if $Blurb %>
                          <p>$Blurb</p>
@@ -97,7 +97,7 @@
      </div>
 </section>
 <!-- Contact Section -->
-<section id="home-contact-section" class="large-section">
+<section id="contact-section" class="large-section">
      <div class="container-fluid">
      <div class="row">
           <div class="col col-sm">
