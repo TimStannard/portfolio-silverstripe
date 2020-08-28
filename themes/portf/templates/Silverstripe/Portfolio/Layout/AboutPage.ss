@@ -1,4 +1,4 @@
-<!-- Home Section -->
+<!-- about section -->
 <section id="about-hero" class="hero-section">
      <div class="container-fluid squeeze-in">
           <div class="row">

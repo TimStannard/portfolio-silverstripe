@@ -714,6 +714,15 @@ margin-right:5px;
   width:100%;
 }
 
+/*---------------------------------------
+    Individual projects page          
+-----------------------------------------*/
+
+#individual-project-hero .hero-img{
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
 
 
 /*------------------------------------------------*/

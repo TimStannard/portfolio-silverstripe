@@ -22,6 +22,7 @@ class ProjectPage extends Page
 
     private static $has_one = [
         'Logo' => Image::class,
+        'HeroLogo' => Image::class,
         'Brochure' => File::class
     ];
 
@@ -34,9 +35,10 @@ class ProjectPage extends Page
     $fields->addFieldToTab('Root.Main', TextField::create('Category','Type of project')
     	->setDescription('Type of project, e.g. UX, UI'), 'Content');
 
-    $fields->addFieldToTab('Root.Main', $featured = CheckboxField::create('Featured','Featured on home page'), 'Content');
+    $fields->addFieldToTab('Root.Main', $featured = CheckboxField::create('Featured','Featured on home page?'), 'Content');
 
-    $fields->addFieldToTab('Root.Attachments', $logo =UploadField::create('Logo','Client logo'));
+    $fields->addFieldToTab('Root.Attachments', $logo =UploadField::create('Logo','Client logo which appears on projects list'));
+    $fields->addFieldToTab('Root.Attachments', $herologo =UploadField::create('HeroLogo','Image appears on the hero in the project page'));
     $fields->addFieldToTab('Root.Attachments', $brochure = UploadField::create('Brochure','Additional content (PDF only)'));
     
     
@@ -48,6 +50,7 @@ class ProjectPage extends Page
 
     private static $owns = [
         'Logo',
+        'HeroLogo',
         'Brochure',
     ];
 
