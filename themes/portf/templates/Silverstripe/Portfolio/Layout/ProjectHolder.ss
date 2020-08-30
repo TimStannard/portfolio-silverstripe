@@ -20,7 +20,7 @@
      </div>
 </section>
 <!-- Projects Section -->
-<section id="home-projects" class="large-section">
+<section id="projects-holder" class="large-section">
      <div id="all-projects">
           <div class="container-fluid squeeze-in">
                <div class="row">
