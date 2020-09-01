@@ -728,8 +728,8 @@ margin-right:5px;
 }
 
 .breadcrumbs {
-  font-size: calc(0.9rem + 0.3vw);
-  padding-top:5vh;
+  font-size: 17px;
+  padding-top:0px;
   font-weight:400;
 }
 
@@ -775,6 +775,11 @@ margin-right:5px;
   #about-hero .col-md-7 p:last-of-type {
   padding-bottom:0px;
   }
+
+  /*project page*/
+  .proj-content p {
+    /*font-size:calc(0.9rem + 0.3vw)*/
+  }
 }
 
 
@@ -813,8 +818,15 @@ margin-right:5px;
     line-height: calc(1.4rem + 0.5vw);
     margin-bottom: 30px;
   }
+  .breadcrumbs {
+  font-size: calc(0.9rem + 0.3vw);
+  padding-top:30px;
+  }
   .sm-red-title>h2, #project-info-main h3 {
     font-size: calc(1.2rem + 0.3vw);
+  }
+  #project-info-main h3  {
+    text-align:right;
   }
   /*home*/
   .hero-section h1 {
