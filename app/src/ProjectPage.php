@@ -16,6 +16,12 @@ use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
 
 class ProjectPage extends Page 
 {
+
+        public function CurrentPageURL()
+    {
+        return $this->URLSegment;
+    }
+
     private static $can_be_root = false;
     private static $table_name = 'ProjectData';
 //Tell the system that we have multiple data elements relating to 
@@ -26,6 +32,7 @@ class ProjectPage extends Page
 
     private static $db = [
     'Blurb' => "Text",
+    'ProjectExternalURL' => "Text",
     'Category' => "Varchar",
     'Featured' => "Boolean",
     'RowHeading' => 'Varchar(100)',
@@ -52,6 +59,9 @@ class ProjectPage extends Page
 
     $fields->addFieldToTab('Root.Main', TextField::create('Category','Type of project')
     	->setDescription('Type of project, e.g. UX, UI'), 'Content');
+
+    $fields->addFieldToTab('Root.Main', TextField::create('ProjectExternalURL','Link to website')
+        ->setDescription('URL'), 'Content');
 
     $fields->addFieldToTab('Root.Main', $featured = CheckboxField::create('Featured','Featured on home page?'), 'Content');
 

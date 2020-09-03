@@ -32,7 +32,6 @@ Tags: Silverstripe, Website
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
-  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -120,6 +119,16 @@ a:focus {
   color:#FF6559;
 }
 
+/*mobile divider*/
+
+.grey-mob-divider {
+  height:2px;
+  background-color: #f7f7f7;
+  width:75%;
+  margin:30px auto;
+  display:block;
+}
+
 /*---------------------------------------
     Typography              
 -----------------------------------------*/
@@ -135,13 +144,13 @@ h6 {
 
 h1,
 h2,
-h3 {
+h3{
   font-family: 'Source Serif Pro', serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 
-h1 {
+h1, {
     font-size: 40px;
     line-height: 50px;
 
@@ -150,9 +159,10 @@ h1 {
 h2 {
   font-size: 28px;
   line-height: inherit;
+  font-weight: 600;
 }
 
-.sm-red-title>h2, #project-info-main h3 {
+.sm-red-title>h2, #project-info-main h2 {
   font-size: 22px;
   color: #FF6559;
   font-family: 'Nunito Sans', sans-serif;
@@ -164,12 +174,13 @@ h3 {
   font-size: 22px;
   line-height: inherit;
   padding: 30px 0px 15px 0px;
+
 }
 
 h4 {
   color: #333;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h5 {
@@ -456,7 +467,7 @@ footer {
 }
 
 .button a,
-.cta-btn {
+.cta-btn, .visit-project-url a {
   display: inline-block;
   border-bottom: 2px solid #ff65593d;
   color: #FF6559;
@@ -474,13 +485,13 @@ footer {
 }
 
 .cta-btn:hover,
-.button a:hover {
+.button a:hover,  .visit-project-url a:hover {
   cursor: pointer;
   border-bottom: 2px solid #FF6559;
 }
 
 p,
-.button a {
+.button a, .visit-project-url a {
   font-size: 20px;
   line-height: 28px;
 }
@@ -639,6 +650,10 @@ margin:27px auto 30px auto;
   padding-bottom:30px;
 }
 
+#about-hero {
+  padding-bottom:30px;
+}
+
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -714,6 +729,10 @@ margin-right:5px;
   width:100%;
 }
 
+.project-item {
+  /*padding:0px 30px;*/
+}
+
 /*---------------------------------------
     Individual projects page          
 -----------------------------------------*/
@@ -724,7 +743,7 @@ margin-right:5px;
 }
 
 #individual-project-hero h1 {
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 .breadcrumbs {
@@ -737,8 +756,8 @@ margin-right:5px;
   padding:30px 0px 60px 0px;
 }
 
-#project-info-main h3 {
-  padding-top:0px;
+#project-info-main h2 {
+  padding:30px 0px;
   text-align: center;
 }
 
@@ -746,7 +765,20 @@ margin-right:5px;
   text-align: center;
 }
 
+#project-info-main .proj-content h3 {
+font-size: 28px;
+    line-height: 37px;
+    color:#212529;
+    padding:30px 0px;
+    font-family: "Nunito Sans", sans-serif;
+}
 
+.visit-project-url a  {
+  padding-top:30px;
+}
+  #projects-more {
+    padding-top:60px;
+  }
 /*------------------------------------------------*/
 
 
@@ -765,7 +797,7 @@ margin-right:5px;
   .collapse {
     background: lightgrey;
   }
-  .hero-section .hero-text-content p, #project-info-main p {
+  .hero-section .hero-text-content p, #contact-section p, .project-category {
     font-size: calc(1.1rem + 0.3vw);
     line-height: calc(1.4rem + 0.6vw);
   }
@@ -776,10 +808,6 @@ margin-right:5px;
   padding-bottom:0px;
   }
 
-  /*project page*/
-  .proj-content p {
-    /*font-size:calc(0.9rem + 0.3vw)*/
-  }
 }
 
 
@@ -790,6 +818,9 @@ margin-right:5px;
     background: yellow;
   }
   /*general*/
+  .grey-mob-divider {
+    display: none;
+  }
   .squeeze-in {
     padding: 0px 15px;
   }
@@ -806,13 +837,14 @@ margin-right:5px;
   }
   h2 {
     font-size: calc(1.3rem + 1vw);
-    line-height: 3.25rem;
+    /*line-height: 3.25rem;*/
     margin-top: 0px;
   }
   h3 {
     font-size: calc(0.8rem + 1vw);
     line-height: calc(1.3rem + 1vw);
   }
+
   p {
     font-size: calc(1rem + 0.3vw);
     line-height: calc(1.4rem + 0.5vw);
@@ -822,11 +854,14 @@ margin-right:5px;
   font-size: calc(0.9rem + 0.3vw);
   padding-top:30px;
   }
-  .sm-red-title>h2, #project-info-main h3 {
+
+  .sm-red-title>h2, #project-info-main h2 {
     font-size: calc(1.2rem + 0.3vw);
+        line-height: calc(1.4rem + 0.6vw);
   }
-  #project-info-main h3  {
-    text-align:right;
+  #project-info-main h2  {
+    text-align:center;
+    padding-top:0px;
   }
   /*home*/
   .hero-section h1 {
@@ -836,10 +871,13 @@ margin-right:5px;
     max-width: 60vw;
   }
   .hero-section .hero-img {
-    height: 42vh;
+    height: 40vh;
     width: 100%;
     background-position: 50% 60%;
     margin: 0px auto;
+  }
+  #home-hero .home-img {
+    height:42vh;
   }
   #service .service-thumb {
     padding: 0px;
@@ -877,6 +915,24 @@ margin-right:5px;
     #projects-holder {
       padding-top:0px;
     }
+    /*individual proejcts page*/
+      #project-info-main .proj-content h3 {
+        font-size: calc(1.2rem + 1.1vw);
+    margin-bottom: 0px;
+    line-height: calc(1.5rem + 1.5vw);
+    text-align: left;
+    padding-top:0px;
+  }
+  #project-info-main {
+  padding:0px 0px 60px 0px;
+}
+  #project-info-main p {
+      font-size: calc(0.9rem + 0.3vw);
+  }
+  .proj-content a {
+  padding-top:0px;
+  }
+
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .collapse {
@@ -914,6 +970,17 @@ margin-right:5px;
      #project-info-main .proj-content {
     padding: 0vh 45px 0 45px;
     }
+    .project-info-container .col-md-8 {
+      padding-right:10vw;
+    }
+    .project-info-container .col-md-4 {
+           padding-right:2.5vw;
+    }
+
+    /*project individual*/
+      #project-info-main h2  {
+    text-align:right;
+  }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1400px) {

@@ -13,7 +13,7 @@
                                    <span class="letters">Tim Stannard is a Web Developer</span>
                                    </span>
                               </h1>
-                              <p class="wow fadeIn" data-wow-delay="1s">Hey! 👋 Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life.</p>
+                              <p class="wow fadeIn" data-wow-delay="0.3s">Hey! 👋 Thanks for stopping by. I'm a Wellington based web developer who loves working with agencies and businesses to bring their ideas to life.</p>
                               <div id="cta-hero-home" class="cta-btn wow fadeIn"  data-wow-delay="1.2s">View my work!</div>
                          </div>
                     </div>
@@ -109,7 +109,7 @@
                          <h2>Let's chat!</h2>
                     </div>
                     <p class="wow fadeIn" data-wow-delay="0.5s">Drop me a line below and I'll get back to you as soon as I can.</p>
-                    <div class="wow fadeIn" data-wow-delay="1s">$ContactForm</div>
+                    <div class="wow fadeIn">$ContactForm</div>
                </div>
           </div>
      </div>
