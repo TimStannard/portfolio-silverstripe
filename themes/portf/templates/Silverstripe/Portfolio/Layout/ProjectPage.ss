@@ -7,7 +7,6 @@
                </div>
                <div class="col-md-7 col-sm-12">
                     <div class="hero-text-content">
-                         <%-- <div>$Breadcrumbs</div> --%>
                          <div class="section-title">
                               <h1 class="ml3">
                                    <span class="text-wrapper">
@@ -15,7 +14,7 @@
                                    </span>
                               </h1>
                               <div class="project-category" data-wow-delay="1s">$Category</div>
-                              <div class="visit-project-url"><a href="$ProjectExternalURL">Visit Website</a></div>
+                              <div class="visit-project-url button"><a href="$ProjectExternalURL">Visit Website</a></div>
                          </div>
                     </div>
                </div>

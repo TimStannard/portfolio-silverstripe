@@ -489,8 +489,13 @@ footer {
 
 p,
 .button a, .visit-project-url a {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+#service p {
+  font-size:20px;
+    line-height: 28px;
 }
 
 .button a {
@@ -799,7 +804,7 @@ font-size: 28px;
   .collapse {
     background: lightgrey;
   }
-  .hero-section .hero-text-content p, #contact-section p, .project-category {
+  .hero-section .hero-text-content p, #contact-section p, #contact-section a, .project-category {
     font-size: calc(1.1rem + 0.3vw);
     line-height: calc(1.4rem + 0.6vw);
   }
@@ -847,7 +852,7 @@ font-size: 28px;
     line-height: calc(1.3rem + 1vw);
   }
 
-  p {
+  p, .button a {
     font-size: calc(1rem + 0.3vw);
     line-height: calc(1.4rem + 0.5vw);
     margin-bottom: 30px;

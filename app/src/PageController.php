@@ -2,9 +2,8 @@
 
 namespace {
 
-    use SilverStripe\CMS\Controllers\ContentController;
-    use SilverStripe\View\Requirements;
-
+use SilverStripe\CMS\Controllers\ContentController;
+use SilverStripe\View\Requirements;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Forms\EmailField;
@@ -19,6 +18,7 @@ use SilverStripe\Control\Email\Email;
     {
 
     private static $allowed_actions = ['ContactForm'];
+    // private static $allowed_actions = ['submit'];
 
     public function ContactForm() 
     { 
@@ -40,7 +40,6 @@ use SilverStripe\Control\Email\Email;
      public function submit($data, $form) 
     { 
         $email = new Email(); 
-         
         $email->setTo('stannard.tim@gmail.com'); 
         $email->setFrom($data['Email']); 
         $email->setSubject("Contact Message from {$data["Name"]} | TS Portfolio"); 
@@ -52,8 +51,7 @@ use SilverStripe\Control\Email\Email;
         $email->setBody($messageBody); 
         $email->send(); 
         return [
-            'Content' => '<p>Submitted successfully. Thank you for your message!</p>',
-            'Form' => ''
+            'ContactForm' => 'Submitted successfully. Thank you for your message!'
         ];
     }
 
@@ -81,7 +79,6 @@ use SilverStripe\Control\Email\Email;
             Requirements::css('themes/portf/css/bootstrap.min.css');
             Requirements::css('themes/portf/css/animate.css');
             Requirements::css('themes/portf/css/font-awesome.min.css');
-            Requirements::css('themes/portf/css/style.css');
             Requirements::css('themes/portf/css/style.css');
             Requirements::javascript('themes/portf/js/jquery.js');
             Requirements::javascript('themes/portf/js/bootstrap.min.js');

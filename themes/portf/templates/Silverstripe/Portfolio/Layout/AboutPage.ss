@@ -13,7 +13,7 @@
                                    <span class="letters">About me</span>
                                    </span>
                               </h1>
-                              <div class="wow fadeIn" data-wow-delay="1s">$Content</div>
+                              <div class="wow fadeIn" data-wow-delay="0.3s">$Content</div>
                          </div>
                     </div>
                </div>
