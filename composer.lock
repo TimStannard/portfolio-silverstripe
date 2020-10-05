@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9889d2be7eef7cb1a9efca20346b36c",
+    "content-hash": "daf090a2be686e2cca611ae067645e4f",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -294,6 +294,50 @@
                 }
             ],
             "time": "2020-04-07T06:57:05+00:00"
+        },
+        {
+            "name": "derralf/silverstripe-simplegooglemap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/derralf/silverstripe-simplegooglemap.git",
+                "reference": "2d4bdc1e320b62e17c64c1f1dcc862a947bf069f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/derralf/silverstripe-simplegooglemap/zipball/2d4bdc1e320b62e17c64c1f1dcc862a947bf069f",
+                "reference": "2d4bdc1e320b62e17c64c1f1dcc862a947bf069f",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^4.2",
+                "silverstripe/vendor-plugin": "^1.0"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "expose": [
+                    "icons",
+                    "javascript",
+                    "logos"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Derralf\\SimpleGoogleMap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Add a google map to a page type (not editable via CMS)",
+            "keywords": [
+                "silverstripe"
+            ],
+            "time": "2019-12-03T14:36:53+00:00"
         },
         {
             "name": "embed/embed",
@@ -4398,7 +4442,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 0
+        "silverstripe/recipe-cms": 0,
+        "derralf/silverstripe-simplegooglemap": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

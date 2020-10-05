@@ -13,7 +13,8 @@
                                    <span class="letters">Store Locator</span>
                                    </span>
                               </h1>
-                              <div class="wow fadeIn" data-wow-delay="0.3s">$Content</div>
+                              <%-- <div class="wow fadeIn" data-wow-delay="0.3s">$Content</div> --%>
+                              <div class="wow fadeIn" data-wow-delay="0.3s">$Map</div>
                          </div>
                     </div>
                </div>
