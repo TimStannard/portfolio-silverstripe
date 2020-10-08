@@ -15,7 +15,10 @@
         "undefinedoffset/silverstripe-nocaptcha": "^2.0",
         "silverstripe/spamprotection": "^3.0",
         "thewebmen/silverstripe-ajaxforms": "^1.0",
-        "derralf/silverstripe-simplegooglemap": "dev-master"
+        "dynamic/silverstripe-locator": "dev-master",
+        "muskie9/data-to-arraylist": "^2.0",
+        "symbiote/silverstripe-gridfieldextensions": "^3",
+        "dynamic/silverstripe-geocoder": "^1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
